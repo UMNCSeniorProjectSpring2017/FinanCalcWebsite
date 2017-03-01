@@ -4,7 +4,6 @@ function isFloat(str) {
     for (var i in str) {
         var chr = str[i]
         if (isNaN(parseInt(chr)) && chr != '.') {
-            console.log(chr.toString() + " " + "false")
             return false;
         }
     }
