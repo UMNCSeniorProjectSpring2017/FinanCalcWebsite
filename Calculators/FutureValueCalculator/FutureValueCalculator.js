@@ -1,18 +1,38 @@
 "use strict";
 
+function isFloat(str) {
+    for (var i in str) {
+        var chr = str[i]
+        if (isNaN(parseInt(chr)) && chr != '.') {
+            console.log(chr.toString() + " " + "false")
+            return false;
+        }
+    }
+
+    return true;
+}
+
 function $calculate() {
-    var cashFlow = parseFloat($("#CashFlow")[0].value)
-    var rateOfReturn = parseFloat($("#RateOfReturn")[0].value)
-    var periods = parseFloat($("#Periods")[0].value)
+    if (!isFloat($("#CashFlow")[0].value) ||
+        !isFloat($("#RateOfReturn")[0].value) ||
+        !isFloat($("#Periods")[0].value)) {
 
-    if (isNaN(cashFlow) ||
-        isNaN(rateOfReturn) ||
-        isNaN(periods)) {
-
-        $("#result").html("Bad argument(s)")
+        $("#result").html("Bad argument(s)");
         return;
     }
 
-    var futureValue = cashFlow * Math.pow(1 + rateOfReturn, periods)
-    $("#result").html(futureValue)
+    var cashFlow = parseFloat($("#CashFlow")[0].value);
+    var rateOfReturn = parseFloat($("#RateOfReturn")[0].value);
+    var periods = parseFloat($("#Periods")[0].value);
+
+    var futureValue = cashFlow * Math.pow(1 + rateOfReturn, periods);
+    $("#result").html(futureValue);
+}
+
+function $isValidFloat(id) {
+    if (!isFloat($(id)[0].value)) {
+        $(id).css("color", "Red");
+    } else {
+        $(id).css("color", "Black");
+    }
 }
