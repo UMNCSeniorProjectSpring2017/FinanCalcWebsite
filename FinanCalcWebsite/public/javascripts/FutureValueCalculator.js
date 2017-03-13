@@ -1,9 +1,9 @@
-"use strict";
+﻿"use strict";
 
 function isFloat(str) {
     for (var i in str) {
         var chr = str[i]
-        if (isNaN(parseInt(chr)) && chr != '.') {
+        if (isNaN(parseInt(chr)) && chr !== '.') {
             return false;
         }
     }
@@ -26,6 +26,23 @@ function $calculate() {
 
     var futureValue = cashFlow * Math.pow(1 + rateOfReturn, periods);
     $("#result").html(futureValue);
+
+    recordUsage();
+}
+
+function recordUsage() {
+    $.ajax({
+        url: "/LogUsage",
+        datatype: "text",
+        data: "FutureValueCalculator",
+        method: "POST",
+        success: function (data) {
+            console.log("SUCCESS")
+        },
+        error: function (data) {
+            console.log("ERROR")
+        }
+    });
 }
 
 function $isValidFloat(id) {
