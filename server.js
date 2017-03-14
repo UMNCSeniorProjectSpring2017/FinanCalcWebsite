@@ -33,8 +33,12 @@ app.get('/FutureValueCalculator', calculator.futureValueCalculator);
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');
-    if (!fs.exists('./log')) {
+    if (!fs.existsSync('./log')) {
         fs.mkdirSync("./log");
+    }
+
+    if (!fs.existsSync('./log/UsageCounts.json')) {
+        fs.writeFileSync('./log/UsageCounts.json', '');
     }
 
     var data = fs.readFileSync('./log/UsageCounts.json');
