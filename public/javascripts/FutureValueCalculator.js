@@ -31,9 +31,7 @@ function $calculate() {
 }
 
 function recordUsage() {
-    $.post("/LogUsage", function (data) {
-        console.log(data)
-    });
+    $.post("/LogUsage", { calculator: "FutureValueCalculator" });
 }
 
 function $isValidFloat(id) {
