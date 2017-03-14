@@ -65,7 +65,7 @@ app.post("/LogUsage", function (req, res) {
         fs.writeFileSync('./log/UsageCounts.json', JSON.stringify(jsonList));
     }
     catch (err) {
-        fs.appendFileSync('./log/Errors.json', JSON.stringify(err));
+        fs.appendFileSync('./log/Errors.json', err.message);
     }
 
 });
