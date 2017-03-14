@@ -38,7 +38,7 @@ app.post("/LogUsage", function (req, res) {
     }
 
     var data = fs.readFileSync('./log/UsageCounts.json');
-    fs.appendFileSync('./log/UsageCounts.json', req.body.calculator);
+
     var jsonList;
     if (data != '') {
         json = JSON.parse(data);
@@ -62,6 +62,7 @@ app.post("/LogUsage", function (req, res) {
     }
 
     fs.appendFileSync('./log/UsageCounts.json', JSON.stringify(jsonList));
+    res.send(jsonList);
 });
 
 http.createServer(app).listen(app.get('port'), function(){

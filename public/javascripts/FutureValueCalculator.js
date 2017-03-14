@@ -31,7 +31,9 @@ function $calculate() {
 }
 
 function recordUsage() {
-    $.post("/LogUsage", function (data) { });
+    $.post("/LogUsage", function (data) {
+        console.log(data)
+    });
 }
 
 function $isValidFloat(id) {
