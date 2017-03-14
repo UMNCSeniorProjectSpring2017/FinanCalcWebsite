@@ -48,6 +48,8 @@ app.post("/LogUsage", function (req, res) {
             jsonList = { Items: [] };
         }
 
+        fs.appendFileSync('./log/Errors.log', jsonList.toString());
+
         var hasCalculator = false;
         for (var i = 0; i < jsonList.Items.length; i++) {
             if (jsonList.Items[i].Name == req.body.calculator) {
@@ -65,7 +67,7 @@ app.post("/LogUsage", function (req, res) {
         fs.writeFileSync('./log/UsageCounts.json', JSON.stringify(jsonList));
     }
     catch (err) {
-        fs.appendFileSync('./log/Errors.log', err.message);
+        fs.appendFileSync('./log/Errors.log', err.message + "\r\n");
     }
 
 });
