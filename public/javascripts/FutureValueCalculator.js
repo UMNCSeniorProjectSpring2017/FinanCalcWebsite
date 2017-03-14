@@ -31,18 +31,7 @@ function $calculate() {
 }
 
 function recordUsage() {
-    $.ajax({
-        url: "/LogUsage",
-        datatype: "text",
-        data: "FutureValueCalculator",
-        method: "POST",
-        success: function (data) {
-            console.log("SUCCESS")
-        },
-        error: function (data) {
-            console.log("ERROR")
-        }
-    });
+    $.post("/LogUsage", { calculator: "FutureValueCalculator" });
 }
 
 function $isValidFloat(id) {
