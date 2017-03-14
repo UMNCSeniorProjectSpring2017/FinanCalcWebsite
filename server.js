@@ -36,6 +36,8 @@ app.post("/LogUsage", function (req, res) {
     if (!fs.existsSync('./log')) {
         fs.mkdirSync("./log");
     }
+    
+    fs.appendFileSync('./log/UsageCounts.json', '');
 
     try {
         var data = fs.readFileSync('./log/UsageCounts.json');
