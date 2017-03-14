@@ -4,5 +4,5 @@
  */
 
 exports.index = function(req, res){
-  res.render('views/index.html');
+    res.render('index', { title: 'ejs' });
 };
