@@ -37,31 +37,37 @@ app.post("/LogUsage", function (req, res) {
         fs.mkdirSync("./log");
     }
 
-    var data = fs.readFileSync('./log/UsageCounts.json');
+    try {
+        var data = fs.readFileSync('./log/UsageCounts.json');
 
-    var jsonList;
-    if (data.length != 0) {
-        json = JSON.parse(data);
-    }
-    else {
-        jsonList = { Items: [] };
-    }
-    
-    var hasCalculator = false;
-    for (var i = 0; i < jsonList.Items.length; i++) {
-        if (jsonList.Items[i].Name == req.body.calculator) {
-            jsonList.Items[i].Count = jsonList.Items[i].Count += 1;
-
-            hasCalculator = true;
-            break;
+        var jsonList;
+        if (data.length != 0) {
+            json = JSON.parse(data);
         }
+        else {
+            jsonList = { Items: [] };
+        }
+
+        var hasCalculator = false;
+        for (var i = 0; i < jsonList.Items.length; i++) {
+            if (jsonList.Items[i].Name == req.body.calculator) {
+                jsonList.Items[i].Count = jsonList.Items[i].Count += 1;
+
+                hasCalculator = true;
+                break;
+            }
+        }
+
+        if (!hasCalculator) {
+            jsonList.Items.add({ Name: req.body.calculator, Count: 1 });
+        }
+
+        fs.writeFileSync('./log/UsageCounts.json', JSON.stringify(jsonList));
+    }
+    catch (err) {
+        fs.appendFileSync('./log/Errors.json', JSON.stringify(err));
     }
 
-    if (!hasCalculator) {
-        jsonList.Items.add({ Name: req.body.calculator, Count: 1 });
-    }
-
-    fs.appendFileSync('./log/UsageCounts.json', JSON.stringify(jsonList));
 });
 
 http.createServer(app).listen(app.get('port'), function(){
