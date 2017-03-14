@@ -37,6 +37,8 @@ app.post("/LogUsage", function (req, res) {
         fs.mkdirSync("./log");
     }
 
+    console.log(req.body.calculator);
+
     var data = fs.readFileSync('./log/UsageCounts.json');
 
     var jsonList;
