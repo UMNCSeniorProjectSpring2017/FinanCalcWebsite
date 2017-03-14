@@ -42,13 +42,11 @@ app.post("/LogUsage", function (req, res) {
 
         var jsonList;
         if (data.length != 0) {
-            json = JSON.parse(data);
+            jsonList = JSON.parse(data);
         }
         else {
             jsonList = { Items: [] };
         }
-
-        fs.appendFileSync('./log/Errors.log', jsonList.toString());
 
         var hasCalculator = false;
         for (var i = 0; i < jsonList.Items.length; i++) {
