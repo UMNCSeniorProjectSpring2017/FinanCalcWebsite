@@ -26,8 +26,8 @@ Working Capital Management
 - [ ] Effective interest rate
 
 Capital budgeting
-- [ ] Future value of money (single amount)
-- [ ] Present value of a future amount
+- [x] Future value of money (single amount) (Abraham Hosch)
+- [ ] Present value of money (single amount)
 - [ ] Future value of an annuity
 - [ ] Present value of an annuity
 - [ ] Price of a common stock today
