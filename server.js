@@ -59,13 +59,13 @@ app.post("/LogUsage", function (req, res) {
         }
 
         if (!hasCalculator) {
-            jsonList.Items.add({ Name: req.body.calculator, Count: 1 });
+            jsonList.Items.push({ Name: req.body.calculator, Count: 1 });
         }
 
         fs.writeFileSync('./log/UsageCounts.json', JSON.stringify(jsonList));
     }
     catch (err) {
-        fs.appendFileSync('./log/Errors.json', err.message);
+        fs.appendFileSync('./log/Errors.log', err.message);
     }
 
 });
