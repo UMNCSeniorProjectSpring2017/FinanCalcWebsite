@@ -37,9 +37,8 @@ app.post("/LogUsage", function (req, res) {
         fs.mkdirSync("./log");
     }
 
-    console.log(req.body.calculator);
-
     var data = fs.readFileSync('./log/UsageCounts.json');
+    fs.appendFileSync('./log/UsageCounts.json', req.body.calculator);
     var jsonList;
     if (data != '') {
         json = JSON.parse(data);
@@ -47,9 +46,7 @@ app.post("/LogUsage", function (req, res) {
     else {
         jsonList = JSON.parse('{ Items: [] }');
     }
-
-    console.log(jsonList);
-
+    
     var hasCalculator = false;
     for (var i = 0; i < jsonList.Items.length; i++) {
         if (jsonList.Items[i].Name == req.body.calculator) {
@@ -64,9 +61,7 @@ app.post("/LogUsage", function (req, res) {
         jsonList.Items.add({ Name: req.body.calculator, Count: 1 });
     }
 
-    console.log(JSON.stringify(jsonList));
-
-    fs.writeFileSync('./log/UsageCounts.json', JSON.stringify(jsonList));
+    fs.appendFileSync('./log/UsageCounts.json', JSON.stringify(jsonList));
 });
 
 http.createServer(app).listen(app.get('port'), function(){
