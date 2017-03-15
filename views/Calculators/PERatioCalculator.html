@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<<head>
+    <title>Price To Earnings Calculator</title>
+    <script src="../../public/javascripts/PERatioCalculator.js"></script>
+    <script src="../../public/javascripts/jquery.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>P/E Ratio </h1>
+    <p>This equation is used to determine the Price to Earnings Ratio,using the current stock price, and earnings per share.</p>
+
+    <h3>Equation</h3>
+    \(PE Ratio = {\frac{Current Stock Price}{Earnings Per Share}} \)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=CurrentPrice>Current Stock Price:</label><br />
+        <input type="text" placeholder="Current Stock Price" id="CurrentStockPrice" oninput="$isValidFloat('#CurrentStockPrice')" /><br />
+        <label for=RateOfReturn>Earnings Per Share:</label><br />
+        <input type="text" placeholder="Earnings Per Share" id="EarningsPerShare" oninput="$isValidFloat('#EarningsPerShare')" /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>Future Value = <output for="CurrentStockPrice EarningsPerShare" id="result" /></p>
+    </form>
+</body>
+</html>
