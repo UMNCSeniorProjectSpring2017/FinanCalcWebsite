@@ -3,7 +3,7 @@
 function isFloat(str) {
     for (var i in str) {
         var chr = str[i]
-        if (isNaN(parseFloat(chr)) && chr != '.') {
+        if (isNaN(parseInt(chr)) && chr != '.') {
             return false;
         }
     }
@@ -26,6 +26,12 @@ function $calculate() {
     var PERatio = currentStockPrice/earningsPerShare;
     console.log(PERatio);
     $("#result").html(PERatio);
+    
+    recordUsage()
+}
+
+function recordUsage() {
+    $.post("/LogUsage", { calculator: "PERatioCalculator" });
 }
 
 function $isValidFloat(id) {
