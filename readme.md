@@ -27,7 +27,7 @@ Working Capital Management
 
 Capital budgeting
 - [x] Future value of money (single amount) (Abraham Hosch)
-- [ ] Present value of money (single amount)
+- [x] Present value of money (single amount) (Abraham Hosch)
 - [ ] Future value of an annuity
 - [ ] Present value of an annuity
 - [ ] Price of a common stock today
@@ -46,11 +46,12 @@ Capital budgeting
 Long-Term financing
 - [ ] Dilution of stock value
 - [ ] Underwriting spread
+
 PE ratio
 - [ ] Yield to maturity
 - [ ] Coupon rate
 - [ ] Residual claims to earnings
 - [ ] Value of one right to buy stock
-- [ ] Price-earnings ratio
+- [x] Price-earnings ratio (Mike Singh)
 - [ ] Discount rate
 - [ ] Effects of the issuances of new stock shares on price
