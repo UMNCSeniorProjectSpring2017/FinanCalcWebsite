@@ -30,6 +30,48 @@ app.configure('development', function(){
 
 app.get('/', routes.index);
 app.get('/FutureValueCalculator', calculator.futureValueCalculator);
+app.get('/PERatioCalculator', calculator.PERatioCalculator);
+
+app.post("/LogUsage", function (req, res) {
+    var fs = require('fs');
+    if (!fs.existsSync('./log')) {
+        fs.mkdirSync("./log");
+    }
+    
+    fs.appendFileSync('./log/UsageCounts.json', '');
+
+    try {
+        var data = fs.readFileSync('./log/UsageCounts.json');
+
+        var jsonList;
+        if (data.length != 0) {
+            jsonList = JSON.parse(data);
+        }
+        else {
+            jsonList = { Items: [] };
+        }
+
+        var hasCalculator = false;
+        for (var i = 0; i < jsonList.Items.length; i++) {
+            if (jsonList.Items[i].Name == req.body.calculator) {
+                jsonList.Items[i].Count = jsonList.Items[i].Count += 1;
+
+                hasCalculator = true;
+                break;
+            }
+        }
+
+        if (!hasCalculator) {
+            jsonList.Items.push({ Name: req.body.calculator, Count: 1 });
+        }
+
+        fs.writeFileSync('./log/UsageCounts.json', JSON.stringify(jsonList));
+    }
+    catch (err) {
+        fs.appendFileSync('./log/Errors.log', err.message + "\r\n");
+    }
+
+});
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');
