@@ -14,7 +14,7 @@ Capital Budgeting
 - [ ] Break-even point
 - [ ] Contribution margin
 - [ ] Total expected value of sales projections
-- [ ] Degree of Operating leverage
+- [x] Degree of Operating leverage
 - [ ] Degree of financial leverage
 - [ ] Degree of combined leverage
 - [ ] Operating income
