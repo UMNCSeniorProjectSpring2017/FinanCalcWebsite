@@ -3,21 +3,21 @@
 ## Equations
 
 Capital Management
-- [ ] Earnings per share
-- [ ] Gross profit margin
-- [ ] Operating profit
-- [ ] Return on assets
-- [ ] Return on equity
+- [ ] Earnings per share (Justin Thomas)
+- [ ] Gross profit margin (Justin Thomas)
+- [ ] Operating profit (Justin Thomas)
+- [ ] Return on assets (Justin Thomas)
+- [ ] Return on equity (Mike Singh)
 - [ ] Du Pont Method (total asset turnover)
 
 Capital Budgeting
 - [ ] Break-even point
 - [ ] Contribution margin
 - [ ] Total expected value of sales projections
-- [ ] Degree of Operating leverage
-- [ ] Degree of financial leverage
-- [ ] Degree of combined leverage
-- [ ] Operating income
+- [ ] Degree of Operating leverage (Abraham Hosch)
+- [ ] Degree of financial leverage (Abraham Hosch)
+- [ ] Degree of combined leverage (Abraham Hosch)
+- [ ] Operating income (Abraham Hosch)
 
 Working Capital Management
 - [ ] Average collection period
@@ -27,10 +27,10 @@ Working Capital Management
 
 Capital budgeting
 - [x] Future value of money (single amount) (Abraham Hosch)
-- [ ] Present value of money (single amount)
-- [ ] Future value of an annuity
-- [ ] Present value of an annuity
-- [ ] Price of a common stock today
+- [x] Present value of money (single amount) (Abraham Hosch)
+- [ ] Future value of an annuity (Mark Becker)
+- [ ] Present value of an annuity (Mark Becker)
+- [ ] Price of a common stock today (Mark Becker)
 - [ ] Risk-free rate of return
 - [ ] Present value of a bonds interest payments
 - [ ] Present value of principal payment (par value) at maturity
@@ -44,13 +44,14 @@ Capital budgeting
 - [ ] Expected values and standard deviations
 
 Long-Term financing
-- [ ] Dilution of stock value
-- [ ] Underwriting spread
+- [ ] Dilution of stock value (Abraham Hosch)
+- [ ] Underwriting spread (Abraham Hosch)
+
 PE ratio
 - [ ] Yield to maturity
 - [ ] Coupon rate
 - [ ] Residual claims to earnings
 - [ ] Value of one right to buy stock
-- [ ] Price-earnings ratio
+- [x] Price-earnings ratio (Mike Singh)
 - [ ] Discount rate
 - [ ] Effects of the issuances of new stock shares on price
