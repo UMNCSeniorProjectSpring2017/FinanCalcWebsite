@@ -32,6 +32,7 @@ app.get('/', routes.index);
 app.get('/FutureValueCalculator', calculator.futureValueCalculator);
 app.get('/PresentValueCalculator', calculator.presentValueCalculator);
 app.get('/PERatioCalculator', calculator.PERatioCalculator);
+app.get('/DOLCalculator', calculator.DOLCalculator);
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');

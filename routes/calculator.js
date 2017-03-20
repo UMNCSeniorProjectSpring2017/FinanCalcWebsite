@@ -14,3 +14,7 @@ exports.presentValueCalculator = function (req, res) {
 exports.PERatioCalculator = function (req, res) {
     res.render('Calculators/PERatioCalculator', { title: 'ejs' });
 };
+
+exports.DOLCalculator = function (req, res) {
+    res.render('Calculators/DOLCalculator', { title: 'ejs' });
+};

@@ -14,7 +14,7 @@ Capital Budgeting
 - [ ] Break-even point
 - [ ] Contribution margin
 - [ ] Total expected value of sales projections
-- [ ] Degree of Operating leverage (Abraham Hosch)
+- [x] Degree of Operating leverage (Abraham Hosch)
 - [ ] Degree of financial leverage (Abraham Hosch)
 - [ ] Degree of combined leverage (Abraham Hosch)
 - [ ] Operating income (Abraham Hosch)
