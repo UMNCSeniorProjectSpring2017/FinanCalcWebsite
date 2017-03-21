@@ -16,7 +16,7 @@ Capital Budgeting
 - [ ] Total expected value of sales projections
 - [x] Degree of Operating leverage (Abraham Hosch)
 - [x] Degree of financial leverage (Abraham Hosch)
-- [ ] Degree of combined leverage (Abraham Hosch)
+- [x] Degree of combined leverage (Abraham Hosch)
 - [ ] Operating income (Abraham Hosch)
 
 Working Capital Management

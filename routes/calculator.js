@@ -22,3 +22,7 @@ exports.DOLCalculator = function (req, res) {
 exports.DFLCalculator = function (req, res) {
     res.render('Calculators/DFLCalculator', { title: 'ejs' });
 };
+
+exports.DCLCalculator = function (req, res) {
+    res.render('Calculators/DCLCalculator', { title: 'ejs' });
+};
