@@ -17,7 +17,7 @@ Capital Budgeting
 - [x] Degree of Operating leverage (Abraham Hosch)
 - [x] Degree of financial leverage (Abraham Hosch)
 - [x] Degree of combined leverage (Abraham Hosch)
-- [ ] Operating income (Abraham Hosch)
+- [x] Operating income (Abraham Hosch)
 
 Working Capital Management
 - [ ] Average collection period

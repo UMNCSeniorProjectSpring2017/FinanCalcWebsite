@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Operating Income</title>
+    <script src="./javascripts/OperatingIncomeCalculator.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Operating \ Income</h1>
+    <p>This equation is used to determine the Operating Income, or Earnings Before Interest and Taxes (EBIT), using revenue, Cost Of Goods Sold (COGS), labor, and other expenses.</p>
+
+    <h3>Equation</h3>
+    \( Operating Income = Revenue &minus; COGS &minus; Labor &minus; Other Expenses \)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=Revenue>Revenue:</label><br />
+        <input type="text" placeholder="Revenue" id="Revenue" oninput="$isValidPercent('#Revenue')" /><br />
+        <label for=Cogs>Cost of Goods Sold:</label><br />
+        <input type="text" placeholder="COGS" id="Cogs" oninput="$isValidPercent('#Cogs')" /><br />
+        <label for=Labor>Labor:</label><br />
+        <input type="text" placeholder="Labor" id="Labor" oninput="$isValidPercent('#Labor')" /><br />
+        <label for=Expenses>Expenses:</label><br />
+        <input type="text" placeholder="Other Expenses" id="Expenses" oninput="$isValidPercent('#Expenses')" /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>Operating Income = <output for="Revenue Cogs, Labor, Expenses" id="result" /></p>
+    </form>
+</body>
+</html>
