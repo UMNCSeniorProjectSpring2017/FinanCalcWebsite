@@ -22,13 +22,13 @@
     <h3>Calculator</h3>
     <form>
         <label for=Revenue>Revenue:</label><br />
-        <input type="text" placeholder="Revenue" id="Revenue" oninput="$isValidPercent('#Revenue')" /><br />
+        <input type="text" placeholder="Revenue" id="Revenue" oninput="$isValidFloat('#Revenue')" /><br />
         <label for=Cogs>Cost of Goods Sold:</label><br />
-        <input type="text" placeholder="COGS" id="Cogs" oninput="$isValidPercent('#Cogs')" /><br />
+        <input type="text" placeholder="COGS" id="Cogs" oninput="$isValidFloat('#Cogs')" /><br />
         <label for=Labor>Labor:</label><br />
-        <input type="text" placeholder="Labor" id="Labor" oninput="$isValidPercent('#Labor')" /><br />
+        <input type="text" placeholder="Labor" id="Labor" oninput="$isValidFloat('#Labor')" /><br />
         <label for=Expenses>Expenses:</label><br />
-        <input type="text" placeholder="Other Expenses" id="Expenses" oninput="$isValidPercent('#Expenses')" /><br />
+        <input type="text" placeholder="Other Expenses" id="Expenses" oninput="$isValidFloat('#Expenses')" /><br />
         <input type="button" value="Calculate" onclick="$calculate()" />
         <p>Operating Income = <output for="Revenue Cogs, Labor, Expenses" id="result" /></p>
     </form>
