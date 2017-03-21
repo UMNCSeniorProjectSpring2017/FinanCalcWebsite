@@ -18,3 +18,15 @@ exports.PERatioCalculator = function (req, res) {
 exports.DOLCalculator = function (req, res) {
     res.render('Calculators/DOLCalculator', { title: 'ejs' });
 };
+
+exports.DFLCalculator = function (req, res) {
+    res.render('Calculators/DFLCalculator', { title: 'ejs' });
+};
+
+exports.DCLCalculator = function (req, res) {
+    res.render('Calculators/DCLCalculator', { title: 'ejs' });
+};
+
+exports.operatingIncomeCalculator = function (req, res) {
+    res.render('Calculators/OperatingIncomeCalculator', { title: 'ejs' });
+};

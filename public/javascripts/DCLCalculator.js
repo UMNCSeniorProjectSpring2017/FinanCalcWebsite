@@ -1,21 +1,21 @@
 "use strict";
 
 function $calculate() {
-    var ebitValue = $("#PercentChangeInEbit")[0].value;
+    var epsValue = $("#PercentChangeInEps")[0].value;
     var salesValue = $("#PercentChangeInSales")[0].value;
 
-    if (!isFloat(ebitValue) || parseFloat(ebitValue) > 1 || parseFloat(ebitValue) < 0 ||
+    if (!isFloat(epsValue) || parseFloat(epsValue) > 1 || parseFloat(epsValue) < 0 ||
         !isFloat(salesValue) || parseFloat(salesValue) > 1 || parseFloat(salesValue) < 0) {
 
         $("#result").html("Bad argument(s)");
         return;
     }
 
-    var percentChangeInEbit = parseFloat(ebitValue);
+    var percentChangeInEps = parseFloat(epsValue);
     var percentChangeInSales = parseFloat(salesValue);
 
-    var dol = percentChangeInEbit / percentChangeInSales;
-    $("#result").html(dol);
+    var dcl = percentChangeInEps / percentChangeInSales;
+    $("#result").html(dcl);
 
-    recordUsage("DOLCalculator");
+    recordUsage("DCLCalculator");
 }
