@@ -17,9 +17,5 @@ function $calculate() {
     var dol = percentChangeInEbit / percentChangeInSales;
     $("#result").html(dol);
 
-    recordUsage();
-}
-
-function recordUsage() {
-    $.post("/LogUsage", { calculator: "DOLCalculator" });
+    recordUsage("DOLCalculator");
 }

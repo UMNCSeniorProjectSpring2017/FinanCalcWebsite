@@ -17,9 +17,5 @@ function $calculate() {
     var dcl = percentChangeInEps / percentChangeInSales;
     $("#result").html(dcl);
 
-    recordUsage();
-}
-
-function recordUsage() {
-    $.post("/LogUsage", { calculator: "DCLCalculator" });
+    recordUsage("DCLCalculator");
 }

@@ -16,9 +16,5 @@ function $calculate() {
     var presentValue = cashFlow / Math.pow(1 + rateOfReturn, periods);
     $("#result").html(presentValue);
 
-    recordUsage();
-}
-
-function recordUsage() {
-    $.post("/LogUsage", { calculator: "PresentValueCalculator" });
+    recordUsage("PresentValueCalculator");
 }

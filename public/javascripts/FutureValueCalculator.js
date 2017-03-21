@@ -16,9 +16,5 @@ function $calculate() {
     var futureValue = cashFlow * Math.pow(1 + rateOfReturn, periods);
     $("#result").html(futureValue);
 
-    recordUsage();
-}
-
-function recordUsage() {
-    $.post("/LogUsage", { calculator: "FutureValueCalculator" });
+    recordUsage("FutureValueCalculator");
 }

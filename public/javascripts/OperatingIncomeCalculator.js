@@ -18,9 +18,5 @@ function $calculate() {
     var operatingIncome = revenue - cogs - labor - expenses;
     $("#result").html(operatingIncome);
 
-    recordUsage();
-}
-
-function recordUsage() {
-    $.post("/LogUsage", { calculator: "OperatingIncomeCalculator" });
+    recordUsage("OperatingIncomeCalculator");
 }

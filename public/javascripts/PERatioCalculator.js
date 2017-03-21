@@ -16,9 +16,5 @@ function $calculate() {
     console.log(PERatio);
     $("#result").html(PERatio);
     
-    recordUsage()
-}
-
-function recordUsage() {
-    $.post("/LogUsage", { calculator: "PERatioCalculator" });
+    recordUsage("PERatioCalculator")
 }

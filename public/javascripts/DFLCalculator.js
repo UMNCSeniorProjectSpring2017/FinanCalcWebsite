@@ -17,9 +17,5 @@ function $calculate() {
     var dfl = percentChangeInEps / percentChangeInEbit;
     $("#result").html(dfl);
 
-    recordUsage();
-}
-
-function recordUsage() {
-    $.post("/LogUsage", { calculator: "DFLCalculator" });
+    recordUsage("DFLCalculator");
 }
