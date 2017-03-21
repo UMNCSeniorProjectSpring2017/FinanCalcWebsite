@@ -1,16 +1,5 @@
 "use strict";
 
-function isFloat(str) {
-    for (var i in str) {
-        var chr = str[i]
-        if (isNaN(parseInt(chr)) && chr !== '.') {
-            return false;
-        }
-    }
-
-    return true;
-}
-
 function $calculate() {
     if (!isFloat($("#Revenue")[0].value) ||
         !isFloat($("#Cogs")[0].value) ||
@@ -34,12 +23,4 @@ function $calculate() {
 
 function recordUsage() {
     $.post("/LogUsage", { calculator: "OperatingIncomeCalculator" });
-}
-
-function $isValidFloat(id) {
-    if (!isFloat($(id)[0].value)) {
-        $(id).css("color", "Red");
-    } else {
-        $(id).css("color", "Black");
-    }
 }

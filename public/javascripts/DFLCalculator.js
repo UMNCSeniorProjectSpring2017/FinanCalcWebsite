@@ -1,16 +1,5 @@
 "use strict";
 
-function isFloat(str) {
-    for (var i in str) {
-        var chr = str[i]
-        if (isNaN(parseInt(chr)) && chr !== '.') {
-            return false;
-        }
-    }
-
-    return true;
-}
-
 function $calculate() {
     var epsValue = $("#PercentChangeInEps")[0].value;
     var ebitValue = $("#PercentChangeInEbit")[0].value;
@@ -33,13 +22,4 @@ function $calculate() {
 
 function recordUsage() {
     $.post("/LogUsage", { calculator: "DFLCalculator" });
-}
-
-function $isValidPercent(id) {
-    var value = $(id)[0].value
-    if (!isFloat(value) || parseFloat(value) > 1 || parseFloat(value) < 0) {
-        $(id).css("color", "Red");
-    } else {
-        $(id).css("color", "Black");
-    }
 }
