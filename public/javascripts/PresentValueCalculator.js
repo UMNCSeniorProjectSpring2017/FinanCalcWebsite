@@ -13,8 +13,8 @@ function $calculate() {
     var rateOfReturn = parseFloat($("#RateOfReturn")[0].value);
     var periods = parseFloat($("#Periods")[0].value);
 
-    var futureValue = cashFlow * Math.pow(1 + rateOfReturn, periods);
-    $("#result").html(futureValue);
+    var presentValue = cashFlow / Math.pow(1 + rateOfReturn, periods);
+    $("#result").html(presentValue);
 
-    recordUsage("FutureValueCalculator");
+    recordUsage("PresentValueCalculator");
 }
