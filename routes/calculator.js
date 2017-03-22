@@ -30,3 +30,7 @@ exports.DCLCalculator = function (req, res) {
 exports.operatingIncomeCalculator = function (req, res) {
     res.render('Calculators/OperatingIncomeCalculator', { title: 'ejs' });
 };
+
+exports.ROECalculator = function (req, res) {
+    res.render('Calculators/ROECalculator', { title: 'ejs' });
+};

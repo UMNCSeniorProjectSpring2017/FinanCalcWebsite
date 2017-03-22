@@ -36,6 +36,7 @@ app.get('/DOLCalculator', calculator.DOLCalculator);
 app.get('/DFLCalculator', calculator.DFLCalculator);
 app.get('/DCLCalculator', calculator.DCLCalculator);
 app.get('/OperatingIncomeCalculator', calculator.operatingIncomeCalculator);
+app.get('/ReturnOnEquityCalculator', calculator.ROECalculator);
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');

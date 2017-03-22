@@ -7,7 +7,7 @@ Capital Management
 - [ ] Gross profit margin (Justin Thomas)
 - [ ] Operating profit (Justin Thomas)
 - [ ] Return on assets (Justin Thomas)
-- [ ] Return on equity (Mike Singh)
+- [x] Return on equity (Mike Singh)
 - [ ] Du Pont Method (total asset turnover)
 
 Capital Budgeting
