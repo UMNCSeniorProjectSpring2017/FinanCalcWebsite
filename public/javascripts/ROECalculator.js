@@ -2,17 +2,17 @@
 
 function $calculate() {
     if (!isFloat($("#NetEarnings")[0].value) ||
-        !isFloat($("#StockHoldersEquity")[0].value)) {
+        !isFloat($("#StockholdersEquity")[0].value)) {
 
         $("#result").html("Bad argument(s)");
         return;
     }
 
-    var netearnings = parseFloat($("#NetEarnings")[0].value);
-    var stockholdersequity = parseFloat($("#StockHoldersEquity")[0].value);
+    var netEarnings = parseFloat($("#NetEarnings")[0].value);
+    var stockholdersEquity = parseFloat($("#StockholdersEquity")[0].value);
   
-    var ReturnOnEquity = NetEarnings/StockholdersEquity;
-    $("#result").html(ReturnOnEquity);
+    var returnOnEquity = netEarnings / stockholdersEquity;
+    $("#result").html(returnOnEquity);
     
     recordUsage("ROECalculator")
 }
