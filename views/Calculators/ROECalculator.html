@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Return On Equity Formula</title>
-    <script src="./javascripts/PERatioCalculator.js"></script>
+    <script src="./javascripts/ROECalculator.js"></script>
     <script src="./javascripts/jquery.js"></script>
     <script src="./javascripts/validation.js"></script>
     <script type="text/x-mathjax-config">
@@ -21,10 +21,10 @@
 
     <h3>Calculator</h3>
     <form>
-        <label for=NetEarning>Net Earnings:</label><br />
+        <label for=NetEarnings>Net Earnings:</label><br />
         <input type="text" placeholder="Net Earnings" id="NetEarnings" oninput="$isValidFloat('#NetEarnings')" /><br />
         <label for=RateOfReturn>Stockholders Equity:</label><br />
-        <input type="text" placeholder="Stockholders Equity" id="StockholdersEquity" oninput="$isValidFloat('#EarningsPerShare')" /><br />
+        <input type="text" placeholder="Stockholders Equity" id="StockholdersEquity" oninput="$isValidFloat('#StockholdersEquity')" /><br />
         <input type="button" value="Calculate" onclick="$calculate()" />
         <p>Return On Equity = <output for="NetEarnings StockholdersEquity" id="result" /></p>
     </form>
