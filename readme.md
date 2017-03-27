@@ -7,17 +7,17 @@ Capital Management
 - [ ] Gross profit margin (Justin Thomas)
 - [ ] Operating profit (Justin Thomas)
 - [ ] Return on assets (Justin Thomas)
-- [ ] Return on equity (Mike Singh)
+- [x] Return on equity (Mike Singh)
 - [ ] Du Pont Method (total asset turnover)
 
 Capital Budgeting
 - [ ] Break-even point
 - [ ] Contribution margin
 - [ ] Total expected value of sales projections
-- [ ] Degree of Operating leverage (Abraham Hosch)
-- [ ] Degree of financial leverage (Abraham Hosch)
-- [ ] Degree of combined leverage (Abraham Hosch)
-- [ ] Operating income (Abraham Hosch)
+- [x] Degree of Operating leverage (Abraham Hosch)
+- [x] Degree of financial leverage (Abraham Hosch)
+- [x] Degree of combined leverage (Abraham Hosch)
+- [x] Operating income (Abraham Hosch)
 
 Working Capital Management
 - [ ] Average collection period

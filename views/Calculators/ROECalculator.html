@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Return On Equity Formula</title>
+    <script src="./javascripts/ROECalculator.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <script src="./javascripts/validation.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Return On Equity  </h1>
+    <p>This equation is used to calcuate Return on Common Stockholders Equity.</p>
+
+    <h3>Equation</h3>
+    \(ROE Formula = {\frac{Net Earning}{Stockholders Equity}} \)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=NetEarnings>Net Earnings:</label><br />
+        <input type="text" placeholder="Net Earnings" id="NetEarnings" oninput="$isValidFloat('#NetEarnings')" /><br />
+        <label for=RateOfReturn>Stockholders Equity:</label><br />
+        <input type="text" placeholder="Stockholders Equity" id="StockholdersEquity" oninput="$isValidFloat('#StockholdersEquity')" /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>Return On Equity = <output for="NetEarnings StockholdersEquity" id="result" /></p>
+    </form>
+</body>
+</html>

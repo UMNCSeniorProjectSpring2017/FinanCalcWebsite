@@ -14,3 +14,23 @@ exports.presentValueCalculator = function (req, res) {
 exports.PERatioCalculator = function (req, res) {
     res.render('Calculators/PERatioCalculator', { title: 'ejs' });
 };
+
+exports.DOLCalculator = function (req, res) {
+    res.render('Calculators/DOLCalculator', { title: 'ejs' });
+};
+
+exports.DFLCalculator = function (req, res) {
+    res.render('Calculators/DFLCalculator', { title: 'ejs' });
+};
+
+exports.DCLCalculator = function (req, res) {
+    res.render('Calculators/DCLCalculator', { title: 'ejs' });
+};
+
+exports.operatingIncomeCalculator = function (req, res) {
+    res.render('Calculators/OperatingIncomeCalculator', { title: 'ejs' });
+};
+
+exports.ROECalculator = function (req, res) {
+    res.render('Calculators/ROECalculator', { title: 'ejs' });
+};

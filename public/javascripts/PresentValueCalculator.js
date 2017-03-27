@@ -1,16 +1,5 @@
 ﻿"use strict";
 
-function isFloat(str) {
-    for (var i in str) {
-        var chr = str[i]
-        if (isNaN(parseInt(chr)) && chr !== '.') {
-            return false;
-        }
-    }
-
-    return true;
-}
-
 function $calculate() {
     if (!isFloat($("#CashFlow")[0].value) ||
         !isFloat($("#RateOfReturn")[0].value) ||
@@ -27,17 +16,5 @@ function $calculate() {
     var presentValue = cashFlow / Math.pow(1 + rateOfReturn, periods);
     $("#result").html(presentValue);
 
-    recordUsage();
-}
-
-function recordUsage() {
-    $.post("/LogUsage", { calculator: "PresentValueCalculator" });
-}
-
-function $isValidFloat(id) {
-    if (!isFloat($(id)[0].value)) {
-        $(id).css("color", "Red");
-    } else {
-        $(id).css("color", "Black");
-    }
+    recordUsage("PresentValueCalculator");
 }
