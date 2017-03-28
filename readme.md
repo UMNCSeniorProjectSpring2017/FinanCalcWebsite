@@ -28,7 +28,7 @@ Working Capital Management
 Capital budgeting
 - [x] Future value of money (single amount) (Abraham Hosch)
 - [x] Present value of money (single amount) (Abraham Hosch)
-- [ ] Future value of an annuity (Mark Becker)
+- [x] Future value of an annuity (Mark Becker)
 - [ ] Present value of an annuity (Mark Becker)
 - [ ] Price of a common stock today (Mark Becker)
 - [ ] Risk-free rate of return
