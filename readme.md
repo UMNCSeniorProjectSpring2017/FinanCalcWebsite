@@ -11,7 +11,7 @@ Capital Management
 - [ ] Du Pont Method (total asset turnover)
 
 Capital Budgeting
-- [ ] Break-even point
+- [x] Break-even point (Abraham Hosch)
 - [ ] Contribution margin
 - [ ] Total expected value of sales projections
 - [x] Degree of Operating leverage (Abraham Hosch)
