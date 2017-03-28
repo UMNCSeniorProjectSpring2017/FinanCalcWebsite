@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Degree of Operating Leverage</title>
+    <script src="./javascripts/DOLCalculator.js"></script>
+    <script src="./javascripts/validation.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Degree of Operating Leverage</h1>
+    <p>This equation is used to determine the Degree of Operating Leverage (DOL) using the percent change in Earnings Before Interest and Taxes (EBIT) and the percent change in sales.</p>
+
+    <h3>Equation</h3>
+    \( DOL = {\frac{\% \ Change \ in \ EBIT}{\% \ Change \ in \ Sales}} \)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=PercentChangeInEbit>% Change in EBIT:</label><br />
+        <input type="text" placeholder="% Change in EBIT" id="PercentChangeInEbit" oninput="$isValidPercent('#PercentChangeInEbit')" /><br />
+        <label for=PercentChangeInSales>% Change in Sales:</label><br />
+        <input type="text" placeholder="% Change in Sales" id="PercentChangeInSales" oninput="$isValidPercent('#PercentChangeInSales')" /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>DOL = <output for="PercentChangeInEbit PercentChangeInSales" id="result" /></p>
+    </form>
+</body>
+</html>
