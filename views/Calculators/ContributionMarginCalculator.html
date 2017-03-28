@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Break-Even Point Calculator</title>
-    <script src="./javascripts/BreakEvenPointCalculator.js"></script>
+    <title>Contribution Margin Calculator</title>
+    <script src="./javascripts/ContributionMarginCalculator.js"></script>
     <script src="./javascripts/jquery.js"></script>
     <script src="./javascripts/validation.js"></script>
     <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
@@ -14,22 +14,20 @@
     </script>
 </head>
 <body>
-    <h1>Break-Even Point</h1>
+    <h1>Contribution Margin</h1>
     <p>This equation is used to determine the number of units must be sold for revenue to offset fixed and variable costs.</p>
 
     <h3>Equation</h3>
-    \(BEP \ in \ Units = \frac{Fixed \ Cost}{Unit \ Price - Variable \ Costs}\)
+    \(Contribution \ Margin = Price - Variable \ Costs\)
 
     <h3>Calculator</h3>
     <form>
-        <label for=FixedCost>Fixed Costs:</label><br />
-        <input type="text" placeholder="Fixed Cost" id="FixedCost" oninput="$isValidFloat('#FixedCost')" /><br />
-        <label for=VariableCosts>Variable Costs:</label><br />
-        <input type="text" placeholder="VariableCosts" id="VariableCosts" oninput="$isValidFloat('#VariableCosts')" /><br />
         <label for=UnitPrice>Unit Price:</label><br />
-        <input type="text" placeholder="Unit Price" id="UnitPrice" oninput="$isValidFloat('#UnitPrice')" /><br /><br />
+        <input type="text" placeholder="Unit Price" id="UnitPrice" oninput="$isValidFloat('#UnitPrice')" /><br />
+        <label for=VariableCosts>Variable Costs:</label><br />
+        <input type="text" placeholder="VariableCosts" id="VariableCosts" oninput="$isValidFloat('#VariableCosts')" /><br /><br />
         <input type="button" value="Calculate" onclick="$calculate()" />
-        <p>Break-Even Point = <output for="FixedCost VariableCosts Price" id="result" /></p>
+        <p>Contribution Margin = <output for="VariableCosts Price" id="result" /></p>
     </form>
 </body>
 </html>
