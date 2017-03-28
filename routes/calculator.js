@@ -42,3 +42,7 @@ exports.futureValueOfAnnuityCalculator = function (req, res) {
 exports.breakEvenPoint = function (req, res) {
     res.render('Calculators/BreakEvenPointCalculator', { title: 'ejs' })
 };
+
+exports.contributionMargin = function (req, res) {
+    res.render('Calculators/ContributionMarginCalculator', { title: 'ejs' })
+};

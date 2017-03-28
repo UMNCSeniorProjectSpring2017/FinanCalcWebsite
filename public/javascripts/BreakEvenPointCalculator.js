@@ -13,7 +13,7 @@ function $calculate() {
     var variableCosts = parseFloat($("#VariableCosts")[0].value);
     var unitPrice = parseFloat($("#UnitPrice")[0].value);
 
-    var breakEvenPoint = fixedCost / (unitPrice - variableCosts)
+    var breakEvenPoint = fixedCost / (unitPrice - variableCosts);
     $("#result").html(breakEvenPoint);
 
     recordUsage("BreakEvenPointCalculator");
