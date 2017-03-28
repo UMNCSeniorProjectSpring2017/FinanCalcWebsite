@@ -34,3 +34,7 @@ exports.operatingIncomeCalculator = function (req, res) {
 exports.ROECalculator = function (req, res) {
     res.render('Calculators/ROECalculator', { title: 'ejs' });
 };
+
+exports.futureValueOfAnnuityCalculator = function (req, res) {
+    res.render('Calculators/FutureValueOfAnnuityCalculator', { title: 'ejs' });
+};
