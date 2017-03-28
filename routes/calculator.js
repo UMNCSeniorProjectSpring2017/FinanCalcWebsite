@@ -35,11 +35,10 @@ exports.ROECalculator = function (req, res) {
     res.render('Calculators/ROECalculator', { title: 'ejs' });
 };
 
-<<<<<<< HEAD
-exports.breakEvenPoint = function (req, res) {
-    res.render('Calculators/BreakEvenPointCalculator', { title: 'ejs' });
-=======
 exports.futureValueOfAnnuityCalculator = function (req, res) {
     res.render('Calculators/FutureValueOfAnnuityCalculator', { title: 'ejs' });
->>>>>>> 6622dd56dc49b6506a46089637695bcc80665903
+};
+
+exports.breakEvenPoint = function (req, res) {
+    res.render('Calculators/BreakEvenPointCalculator', { title: 'ejs' })
 };
