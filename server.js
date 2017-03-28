@@ -37,11 +37,8 @@ app.get('/DFLCalculator', calculator.DFLCalculator);
 app.get('/DCLCalculator', calculator.DCLCalculator);
 app.get('/OperatingIncomeCalculator', calculator.operatingIncomeCalculator);
 app.get('/ReturnOnEquityCalculator', calculator.ROECalculator);
-<<<<<<< HEAD
-app.get('/BreakEvenPointCalculator', calculator.breakEvenPoint);
-=======
 app.get('/FutureValueOfAnnuityCalculator', calculator.futureValueOfAnnuityCalculator);
->>>>>>> 6622dd56dc49b6506a46089637695bcc80665903
+app.get('/BreakEvenPointCalculator', calculator.breakEvenPoint);
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');
