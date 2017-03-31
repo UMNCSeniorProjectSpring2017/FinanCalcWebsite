@@ -48,5 +48,5 @@ exports.contributionMargin = function (req, res) {
 };
 
 exports.dilutedEarningsPerShare = function (req, res) {
-    res.render('Calculators/DilutedEarningsPerShare', { title: 'ejs' })
+    res.render('Calculators/DilutedEarningsPerShareCalculator', { title: 'ejs' })
 };
