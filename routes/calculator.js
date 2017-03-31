@@ -46,3 +46,7 @@ exports.breakEvenPoint = function (req, res) {
 exports.contributionMargin = function (req, res) {
     res.render('Calculators/ContributionMarginCalculator', { title: 'ejs' })
 };
+
+exports.dilutedEarningsPerShare = function (req, res) {
+    res.render('Calculators/DilutedEarningsPerShareCalculator', { title: 'ejs' })
+};

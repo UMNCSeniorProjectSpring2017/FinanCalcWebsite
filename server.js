@@ -40,6 +40,7 @@ app.get('/ReturnOnEquityCalculator', calculator.ROECalculator);
 app.get('/FutureValueOfAnnuityCalculator', calculator.futureValueOfAnnuityCalculator);
 app.get('/BreakEvenPointCalculator', calculator.breakEvenPoint);
 app.get('/ContributionMarginCalculator', calculator.contributionMargin);
+app.get('/DilutedEarningsPerShareCalculator', calculator.dilutedEarningsPerShare);
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');
