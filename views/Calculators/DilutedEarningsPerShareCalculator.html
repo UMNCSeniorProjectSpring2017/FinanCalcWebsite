@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Diluted Earnings Per Share</title>
+    <script src="./javascripts/DilutedEarningsPerShareCalculator.js"></script>
+    <script src="./javascripts/validation.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Diluted Earnings Per Share</h1>
+    <p>This equation is used to determine Diluted Earnings Per Share (Diluted EPS) given the net income, the shares outstanding, and the convertable securities.</p>
+
+    <h3>Equation</h3>
+    \(Diluted \ EPS = {\frac{Net \ Income}{Shares \ Outstanding &plus; Convertable \ Securities}} \)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=NetIncome>Net Income:</label><br />
+        <input type="text" placeholder="Net Income" id="NetIncome" oninput="$isValidFloat('#NetIncome')" /><br />
+
+        <label for=SharesOutstanding>Shares Outstanding:</label><br />
+        <input type="text" placeholder="Shares Outstanding" id="SharesOutstanding" oninput="$isValidFloat('#SharesOutstanding')" /><br />
+
+        <label for=ConvertableSecurities>Convertable Securities:</label><br />
+        <input type="text" placeholder="Convertable Securities" id="ConvertableSecurities" oninput="$isValidFloat('#ConvertableSecurities')" /><br />
+
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>Diluted EPS = <output for="NetIncome SharesOutstanding ConvertableSecurities" id="result" /></p>
+    </form>
+</body>
+</html>

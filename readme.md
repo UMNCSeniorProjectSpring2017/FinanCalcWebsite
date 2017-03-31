@@ -44,8 +44,7 @@ Capital budgeting
 - [ ] Expected values and standard deviations
 
 Long-Term financing
-- [ ] Dilution of stock value (Abraham Hosch)
-- [ ] Underwriting spread (Abraham Hosch)
+- [x] Dilution of stock value (Diluted EPS) (Abraham Hosch)
 
 PE ratio
 - [ ] Yield to maturity
