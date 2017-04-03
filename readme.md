@@ -29,8 +29,8 @@ Capital budgeting
 - [x] Future value of money (single amount) (Abraham Hosch)
 - [x] Present value of money (single amount) (Abraham Hosch)
 - [x] Future value of an annuity (Mark Becker)
-- [ ] Present value of an annuity (Mark Becker)
-- [ ] Price of a common stock today (Mark Becker)
+- [x] Present value of an annuity (Mark Becker)
+- [x] Price of a common stock today (Mark Becker)
 - [ ] Risk-free rate of return
 - [ ] Present value of a bonds interest payments
 - [ ] Present value of principal payment (par value) at maturity

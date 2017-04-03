@@ -38,6 +38,9 @@ app.get('/DCLCalculator', calculator.DCLCalculator);
 app.get('/OperatingIncomeCalculator', calculator.operatingIncomeCalculator);
 app.get('/ReturnOnEquityCalculator', calculator.ROECalculator);
 app.get('/FutureValueOfAnnuityCalculator', calculator.futureValueOfAnnuityCalculator);
+app.get('/PresentValueOfAnnuityCalculator', calculator.PresentValueOfAnnuityCalculator);
+app.get('/PriceOfACommonStockTodayCalculator', calculator.priceOfACommonStockTodayCalculator);
+
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');

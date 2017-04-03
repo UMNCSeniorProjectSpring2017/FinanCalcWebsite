@@ -38,3 +38,11 @@ exports.ROECalculator = function (req, res) {
 exports.futureValueOfAnnuityCalculator = function (req, res) {
     res.render('Calculators/FutureValueOfAnnuityCalculator', { title: 'ejs' });
 };
+
+exports.presentValueOfAnnuityCalculator = function (req, res) {
+    res.render('Calculators/PresentValueOfAnnuityCalculator', { title: 'ejs' });
+};
+
+exports.priceOfACommonStockTodayCalculator = function (req, res) {
+    res.render('Calculators/PriceOfACommonStockTodayCalculator', { title: 'ejs' });
+};
