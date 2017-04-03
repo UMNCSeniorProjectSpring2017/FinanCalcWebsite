@@ -38,11 +38,14 @@ app.get('/DCLCalculator', calculator.DCLCalculator);
 app.get('/OperatingIncomeCalculator', calculator.operatingIncomeCalculator);
 app.get('/ReturnOnEquityCalculator', calculator.ROECalculator);
 app.get('/FutureValueOfAnnuityCalculator', calculator.futureValueOfAnnuityCalculator);
-app.get('/PresentValueOfAnnuityCalculator', calculator.PresentValueOfAnnuityCalculator);
+app.get('/PresentValueOfAnnuityCalculator', calculator.presentValueOfAnnuityCalculator);
 app.get('/PriceOfACommonStockTodayCalculator', calculator.priceOfACommonStockTodayCalculator);
 app.get('/BreakEvenPointCalculator', calculator.breakEvenPoint);
 app.get('/ContributionMarginCalculator', calculator.contributionMargin);
 app.get('/DilutedEarningsPerShareCalculator', calculator.dilutedEarningsPerShare);
+app.get('/DuPontMethodCalculator', calculator.duPontMethod);
+app.get('/AverageCollectionPeriodCalculator', calculator.averageCollectionPeriod);
+app.get('/EffectiveInterestRateCalculator', calculator.effectiveInterestRate);
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');

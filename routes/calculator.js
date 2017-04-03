@@ -45,15 +45,28 @@ exports.presentValueOfAnnuityCalculator = function (req, res) {
 
 exports.priceOfACommonStockTodayCalculator = function (req, res) {
     res.render('Calculators/PriceOfACommonStockTodayCalculator', { title: 'ejs' });
+};
 
 exports.breakEvenPoint = function (req, res) {
-    res.render('Calculators/BreakEvenPointCalculator', { title: 'ejs' })
+    res.render('Calculators/BreakEvenPointCalculator', { title: 'ejs' });
 };
 
 exports.contributionMargin = function (req, res) {
-    res.render('Calculators/ContributionMarginCalculator', { title: 'ejs' })
+    res.render('Calculators/ContributionMarginCalculator', { title: 'ejs' });
 };
 
 exports.dilutedEarningsPerShare = function (req, res) {
-    res.render('Calculators/DilutedEarningsPerShareCalculator', { title: 'ejs' })
+    res.render('Calculators/DilutedEarningsPerShareCalculator', { title: 'ejs' });
+};
+
+exports.duPontMethod = function (req, res) {
+    res.render('Calculators/DuPontMethodCalculator', { title: 'ejs' });
+};
+
+exports.averageCollectionPeriod = function (req, res) {
+    res.render('Calculators/AverageCollectionPeriodCalculator', { title: 'ejs' });
+};
+
+exports.effectiveInterestRate = function (req, res) {
+    res.render('Calculators/EffectiveInterestRateCalculator', { title: 'ejs' });
 };
