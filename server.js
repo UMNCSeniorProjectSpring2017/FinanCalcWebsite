@@ -38,6 +38,8 @@ app.get('/DCLCalculator', calculator.DCLCalculator);
 app.get('/OperatingIncomeCalculator', calculator.operatingIncomeCalculator);
 app.get('/ReturnOnEquityCalculator', calculator.ROECalculator);
 app.get('/FutureValueOfAnnuityCalculator', calculator.futureValueOfAnnuityCalculator);
+app.get('/PresentValueOfAnnuityCalculator', calculator.PresentValueOfAnnuityCalculator);
+app.get('/PriceOfACommonStockTodayCalculator', calculator.priceOfACommonStockTodayCalculator);
 app.get('/BreakEvenPointCalculator', calculator.breakEvenPoint);
 app.get('/ContributionMarginCalculator', calculator.contributionMargin);
 app.get('/DilutedEarningsPerShareCalculator', calculator.dilutedEarningsPerShare);
