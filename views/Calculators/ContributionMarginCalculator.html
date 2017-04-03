@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Contribution Margin Calculator</title>
+    <script src="./javascripts/ContributionMarginCalculator.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <script src="./javascripts/validation.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Contribution Margin</h1>
+    <p>This equation is used to determine the number of units must be sold for revenue to offset fixed and variable costs.</p>
+
+    <h3>Equation</h3>
+    \(Contribution \ Margin = Price - Variable \ Costs\)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=UnitPrice>Unit Price:</label><br />
+        <input type="text" placeholder="Unit Price" id="UnitPrice" oninput="$isValidFloat('#UnitPrice')" /><br />
+        <label for=VariableCosts>Variable Costs:</label><br />
+        <input type="text" placeholder="VariableCosts" id="VariableCosts" oninput="$isValidFloat('#VariableCosts')" /><br /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>Contribution Margin = <output for="VariableCosts Price" id="result" /></p>
+    </form>
+</body>
+</html>

@@ -8,22 +8,22 @@ Capital Management
 - [ ] Operating profit (Justin Thomas)
 - [ ] Return on assets (Justin Thomas)
 - [x] Return on equity (Mike Singh)
-- [ ] Du Pont Method (total asset turnover)
+- [ ] Du Pont Method (total asset turnover) (Abraham Hosch)
 
 Capital Budgeting
-- [ ] Break-even point
-- [ ] Contribution margin
-- [ ] Total expected value of sales projections
+- [x] Break-even point (Abraham Hosch)
+- [x] Contribution margin (Abraham Hosch)
+- [ ] Total expected value of sales projections (Abraham Hosch)
 - [x] Degree of Operating leverage (Abraham Hosch)
 - [x] Degree of financial leverage (Abraham Hosch)
 - [x] Degree of combined leverage (Abraham Hosch)
 - [x] Operating income (Abraham Hosch)
 
 Working Capital Management
-- [ ] Average collection period
-- [ ] Carrying cost per unit
-- [ ] Cost of not taking repayment discounts
-- [ ] Effective interest rate
+- [ ] Average collection period (Abraham Hosch)
+- [ ] Carrying cost per unit (Abraham Hosch)
+- [ ] Cost of not taking repayment discounts (Abraham Hosch)
+- [ ] Effective interest rate (Abraham Hosch)
 
 Capital budgeting
 - [x] Future value of money (single amount) (Abraham Hosch)
@@ -44,13 +44,12 @@ Capital budgeting
 - [ ] Expected values and standard deviations
 
 Long-Term financing
-- [ ] Dilution of stock value (Abraham Hosch)
-- [ ] Underwriting spread (Abraham Hosch)
+- [x] Dilution of stock value (Diluted EPS) (Abraham Hosch)
 
 PE ratio
-- [ ] Yield to maturity
-- [ ] Coupon rate
-- [ ] Residual claims to earnings
+- [ ] Yield to maturity (Mark Becker)
+- [ ] Coupon rate (Mark Becker)
+- [ ] Residual claims to earnings (Mark Becker)
 - [ ] Value of one right to buy stock
 - [x] Price-earnings ratio (Mike Singh)
 - [ ] Discount rate
