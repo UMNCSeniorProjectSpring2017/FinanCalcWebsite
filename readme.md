@@ -23,7 +23,7 @@ Working Capital Management
 - [x] Average collection period (Abraham Hosch)
 - [ ] Carrying cost per unit (Abraham Hosch)
 - [ ] Cost of not taking repayment discounts (Abraham Hosch)
-- [ ] Effective interest rate (Abraham Hosch)
+- [x] Effective interest rate (Abraham Hosch)
 
 Capital budgeting
 - [x] Future value of money (single amount) (Abraham Hosch)

@@ -66,3 +66,7 @@ exports.duPontMethod = function (req, res) {
 exports.averageCollectionPeriod = function (req, res) {
     res.render('Calculators/AverageCollectionPeriodCalculator', { title: 'ejs' });
 };
+
+exports.effectiveInterestRate = function (req, res) {
+    res.render('Calculators/EffectiveInterestRateCalculator', { title: 'ejs' });
+};
