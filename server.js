@@ -44,6 +44,7 @@ app.get('/BreakEvenPointCalculator', calculator.breakEvenPoint);
 app.get('/ContributionMarginCalculator', calculator.contributionMargin);
 app.get('/DilutedEarningsPerShareCalculator', calculator.dilutedEarningsPerShare);
 app.get('/DuPontMethodCalculator', calculator.duPontMethod);
+app.get('/AverageCollectionPeriodCalculator', calculator.averageCollectionPeriod);
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');

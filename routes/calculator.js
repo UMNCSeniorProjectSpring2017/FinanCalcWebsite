@@ -62,3 +62,7 @@ exports.dilutedEarningsPerShare = function (req, res) {
 exports.duPontMethod = function (req, res) {
     res.render('Calculators/DuPontMethodCalculator', { title: 'ejs' });
 };
+
+exports.averageCollectionPeriod = function (req, res) {
+    res.render('Calculators/AverageCollectionPeriodCalculator', { title: 'ejs' });
+};

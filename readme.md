@@ -20,7 +20,7 @@ Capital Budgeting
 - [x] Operating income (Abraham Hosch)
 
 Working Capital Management
-- [ ] Average collection period (Abraham Hosch)
+- [x] Average collection period (Abraham Hosch)
 - [ ] Carrying cost per unit (Abraham Hosch)
 - [ ] Cost of not taking repayment discounts (Abraham Hosch)
 - [ ] Effective interest rate (Abraham Hosch)
