@@ -58,3 +58,7 @@ exports.contributionMargin = function (req, res) {
 exports.dilutedEarningsPerShare = function (req, res) {
     res.render('Calculators/DilutedEarningsPerShareCalculator', { title: 'ejs' });
 };
+
+exports.duPontMethod = function (req, res) {
+    res.render('Calculators/DuPontMethodCalculator', { title: 'ejs' });
+};

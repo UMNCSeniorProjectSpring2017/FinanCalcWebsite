@@ -8,7 +8,7 @@ Capital Management
 - [ ] Operating profit (Justin Thomas)
 - [ ] Return on assets (Justin Thomas)
 - [x] Return on equity (Mike Singh)
-- [ ] Du Pont Method (total asset turnover) (Abraham Hosch)
+- [x] Du Pont Method (total asset turnover) (Abraham Hosch)
 
 Capital Budgeting
 - [x] Break-even point (Abraham Hosch)
