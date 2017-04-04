@@ -2,10 +2,10 @@
 <html>
 <head>
     <title>Cost of Missing Discount Calculator</title>
-    <script src="../../public/javascripts/CostOfMissingDiscountCalculator.js"></script>
-    <script src="../../public/javascripts/jquery.js"></script>
-    <script src="../../public/javascripts/validation.js"></script>
-    <link rel="Stylesheet" href="../../public/stylesheets/style.css" type="text/css" />
+    <script src="./javascripts/CostOfMissingDiscountCalculator.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <script src="./javascripts/validation.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true}});
     </script>
@@ -27,9 +27,9 @@
         <label for=F>Number of days to final payment:</label><br />
         <input type="text" placeholder="F" id="F" oninput="$isValidInteger('#F')" /><br />
         <label for=L>Number of days to expiration of discount:</label><br />
-        <input type="text" placeholder="L" id="L" oninput="$isValidFloat('#L')" /><br /><br />
+        <input type="text" placeholder="L" id="L" oninput="$isValidInteger('#L')" /><br /><br />
         <input type="button" value="Calculate" onclick="$calculate()" />
-        <p>Average Collection Period = <output for="D F L" id="result" /></p>
+        <p>Cost of Missing Discount = <output for="D F L" id="result" /></p>
     </form>
 </body>
 </html>
