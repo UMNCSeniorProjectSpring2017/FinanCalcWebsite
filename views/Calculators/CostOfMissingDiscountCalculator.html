@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Cost of Missing Discount Calculator</title>
+    <script src="../../public/javascripts/CostOfMissingDiscountCalculator.js"></script>
+    <script src="../../public/javascripts/jquery.js"></script>
+    <script src="../../public/javascripts/validation.js"></script>
+    <link rel="Stylesheet" href="../../public/stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Cost of Missing Discount</h1>
+    <p>This equation is used to determine the cost of not taking advantage of a discount offered for early payment. $D$ is the discount rate, $F$ is the number of days to the final payment date, and $L$ is the number of days to the last discount date.</p>
+
+    <h3>Equation</h3>
+    \(Cost \ of \ Missing \ Discount = \frac{D}{100 &minus; D}&times;\frac{365}{F &minus; L}\)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=D>Discount:</label><br />
+        <input type="text" placeholder="D" id="D" oninput="$isValidPercent('#D')" /><br />
+        <label for=F>Number of days to final payment:</label><br />
+        <input type="text" placeholder="F" id="F" oninput="$isValidInteger('#F')" /><br />
+        <label for=L>Number of days to expiration of discount:</label><br />
+        <input type="text" placeholder="L" id="L" oninput="$isValidFloat('#L')" /><br /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>Average Collection Period = <output for="D F L" id="result" /></p>
+    </form>
+</body>
+</html>
