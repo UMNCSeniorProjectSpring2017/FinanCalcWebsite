@@ -47,6 +47,7 @@ app.get('/DuPontMethodCalculator', calculator.duPontMethodCalculator);
 app.get('/AverageCollectionPeriodCalculator', calculator.averageCollectionPeriodCalculator);
 app.get('/EffectiveInterestRateCalculator', calculator.effectiveInterestRateCalculator);
 app.get('/CostOfMissingDiscountCalculator', calculator.costOfMissingDiscountCalculator);
+app.get('/EconomicOrderingQuantityCalculator', calculator.EOQCalculator);
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');
