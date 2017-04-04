@@ -40,12 +40,13 @@ app.get('/ReturnOnEquityCalculator', calculator.ROECalculator);
 app.get('/FutureValueOfAnnuityCalculator', calculator.futureValueOfAnnuityCalculator);
 app.get('/PresentValueOfAnnuityCalculator', calculator.presentValueOfAnnuityCalculator);
 app.get('/PriceOfACommonStockTodayCalculator', calculator.priceOfACommonStockTodayCalculator);
-app.get('/BreakEvenPointCalculator', calculator.breakEvenPoint);
-app.get('/ContributionMarginCalculator', calculator.contributionMargin);
-app.get('/DilutedEarningsPerShareCalculator', calculator.dilutedEarningsPerShare);
-app.get('/DuPontMethodCalculator', calculator.duPontMethod);
-app.get('/AverageCollectionPeriodCalculator', calculator.averageCollectionPeriod);
-app.get('/EffectiveInterestRateCalculator', calculator.effectiveInterestRate);
+app.get('/BreakEvenPointCalculator', calculator.breakEvenPointCalculator);
+app.get('/ContributionMarginCalculator', calculator.contributionMarginCalculator);
+app.get('/DilutedEarningsPerShareCalculator', calculator.dilutedEarningsPerShareCalculator);
+app.get('/DuPontMethodCalculator', calculator.duPontMethodCalculator);
+app.get('/AverageCollectionPeriodCalculator', calculator.averageCollectionPeriodCalculator);
+app.get('/EffectiveInterestRateCalculator', calculator.effectiveInterestRateCalculator);
+app.get('/CostOfMissingDiscountCalculator', calculator.costOfMissingDiscountCalculator);
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');

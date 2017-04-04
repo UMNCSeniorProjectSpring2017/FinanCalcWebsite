@@ -47,26 +47,30 @@ exports.priceOfACommonStockTodayCalculator = function (req, res) {
     res.render('Calculators/PriceOfACommonStockTodayCalculator', { title: 'ejs' });
 };
 
-exports.breakEvenPoint = function (req, res) {
+exports.breakEvenPointCalculator = function (req, res) {
     res.render('Calculators/BreakEvenPointCalculator', { title: 'ejs' });
 };
 
-exports.contributionMargin = function (req, res) {
+exports.contributionMarginCalculator = function (req, res) {
     res.render('Calculators/ContributionMarginCalculator', { title: 'ejs' });
 };
 
-exports.dilutedEarningsPerShare = function (req, res) {
+exports.dilutedEarningsPerShareCalculator = function (req, res) {
     res.render('Calculators/DilutedEarningsPerShareCalculator', { title: 'ejs' });
 };
 
-exports.duPontMethod = function (req, res) {
+exports.duPontMethodCalculator = function (req, res) {
     res.render('Calculators/DuPontMethodCalculator', { title: 'ejs' });
 };
 
-exports.averageCollectionPeriod = function (req, res) {
+exports.averageCollectionPeriodCalculator = function (req, res) {
     res.render('Calculators/AverageCollectionPeriodCalculator', { title: 'ejs' });
 };
 
-exports.effectiveInterestRate = function (req, res) {
+exports.effectiveInterestRateCalculator = function (req, res) {
     res.render('Calculators/EffectiveInterestRateCalculator', { title: 'ejs' });
+};
+
+exports.costOfMissingDiscountCalculator = function (req, res) {
+    res.render('Calculators/CostOfMissingDiscountCalculator', { title: 'ejs' });
 };
