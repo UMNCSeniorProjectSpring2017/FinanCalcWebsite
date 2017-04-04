@@ -74,3 +74,7 @@ exports.effectiveInterestRateCalculator = function (req, res) {
 exports.costOfMissingDiscountCalculator = function (req, res) {
     res.render('Calculators/CostOfMissingDiscountCalculator', { title: 'ejs' });
 };
+
+exports.EOQCalculator = function (req, res) {
+    res.render('Calculators/EOQCalculator', { title: 'ejs' });
+};
