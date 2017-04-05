@@ -3,34 +3,35 @@
 ## Equations
 
 Capital Management
-- [ ] Earnings per share
-- [ ] Gross profit margin
-- [ ] Operating profit
-- [ ] Return on assets
-- [ ] Return on equity
-- [ ] Du Pont Method (total asset turnover)
+- [ ] Earnings per share (Justin Thomas)
+- [ ] Gross profit margin (Justin Thomas)
+- [ ] Operating profit (Justin Thomas)
+- [ ] Return on assets (Justin Thomas)
+- [x] Return on equity (Mike Singh)
+- [x] Du Pont Method (total asset turnover) (Abraham Hosch)
 
 Capital Budgeting
-- [ ] Break-even point
-- [ ] Contribution margin
-- [ ] Total expected value of sales projections
-- [ ] Degree of Operating leverage
-- [ ] Degree of financial leverage
-- [ ] Degree of combined leverage
-- [ ] Operating income
+- [x] Break-even point (Abraham Hosch)
+- [x] Contribution margin (Abraham Hosch)
+- [ ] Total expected value of sales projections (Abraham Hosch)
+- [x] Degree of Operating leverage (Abraham Hosch)
+- [x] Degree of financial leverage (Abraham Hosch)
+- [x] Degree of combined leverage (Abraham Hosch)
+- [x] Operating income (Abraham Hosch)
 
 Working Capital Management
-- [ ] Average collection period
-- [ ] Carrying cost per unit
-- [ ] Cost of not taking repayment discounts
-- [ ] Effective interest rate
+- [x] Average collection period (Abraham Hosch)
+- [ ] Carrying cost per unit (Abraham Hosch)
+- [x] Economic ordering quantity (Abraham Hosch)
+- [x] Cost of not taking repayment discounts (Cost of Missing Discount) (Abraham Hosch)
+- [x] Effective interest rate (Abraham Hosch)
 
 Capital budgeting
 - [x] Future value of money (single amount) (Abraham Hosch)
 - [x] Present value of money (single amount) (Abraham Hosch)
-- [ ] Future value of an annuity
-- [ ] Present value of an annuity
-- [ ] Price of a common stock today
+- [x] Future value of an annuity (Mark Becker)
+- [x] Present value of an annuity (Mark Becker)
+- [x] Price of a common stock today (Mark Becker)
 - [ ] Risk-free rate of return
 - [ ] Present value of a bonds interest payments
 - [ ] Present value of principal payment (par value) at maturity
@@ -44,13 +45,12 @@ Capital budgeting
 - [ ] Expected values and standard deviations
 
 Long-Term financing
-- [ ] Dilution of stock value
-- [ ] Underwriting spread
+- [x] Dilution of stock value (Diluted EPS) (Abraham Hosch)
 
 PE ratio
-- [ ] Yield to maturity
-- [ ] Coupon rate
-- [ ] Residual claims to earnings
+- [ ] Yield to maturity (Mark Becker)
+- [ ] Coupon rate (Mark Becker)
+- [ ] Residual claims to earnings (Mark Becker)
 - [ ] Value of one right to buy stock
 - [x] Price-earnings ratio (Mike Singh)
 - [ ] Discount rate

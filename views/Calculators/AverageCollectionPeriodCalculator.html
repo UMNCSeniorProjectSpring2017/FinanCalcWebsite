@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Average Collection Period Calculator</title>
+    <script src="./javascripts/AverageCollectionPeriodCalculator.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <script src="./javascripts/validation.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Average Collection Period</h1>
+    <p>This equation is used to determine how quickly its average accounts receivables (AR) account is collected.</p>
+
+    <h3>Equation</h3>
+    \(Average \ Collection \ Period = \frac{Days \ In \ Period &times; AR}{Credit \ Sales \ In \ Period}\)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=Days>Days:</label><br />
+        <input type="text" placeholder="Days" id="Days" oninput="$isValidInteger('#Days')" /><br />
+        <label for=AR>AR:</label><br />
+        <input type="text" placeholder="AR" id="AR" oninput="$isValidFloat('#AR')" /><br />
+        <label for=CreditSales>Credit Sales:</label><br />
+        <input type="text" placeholder="Credit Sales" id="CreditSales" oninput="$isValidFloat('#CreditSales')" /><br /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>Average Collection Period = <output for="Days AR CreditSales" id="result" /></p>
+    </form>
+</body>
+</html>

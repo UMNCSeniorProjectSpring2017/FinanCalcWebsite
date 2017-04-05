@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>DuPont Method Calculator</title>
+    <script src="./javascripts/DuPontMethodCalculator.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <script src="./javascripts/validation.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>DuPont Method</h1>
+    <p>The DuPont Method, or DuPont Identity is used to calculate the Return on Equity (ROE).</p>
+
+    <h3>Equation</h3>
+    \(ROE = profit \ margin &times; asset \ turnover &times equity \ multiplier\)
+    <br/><br/>or<br/><br/>
+    \(ROE = \frac{net \ income}{sales} &times; \frac{revenue}{total \ assets} &times; \frac{total \ assets}{shareholder \ equity}\)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=ProfitMargin>Profit Margin:</label><br />
+        <input type="text" placeholder="Profit Margin" id="ProfitMargin" oninput="$isValidFloat('#ProfitMargin')" /><br />
+        <label for=AssetTurnover>Asset Turnover:</label><br />
+        <input type="text" placeholder="Asset Turnover" id="AssetTurnover" oninput="$isValidFloat('#AssetTurnover')" /><br />
+        <label for=EquityMultiplier>Equity Multiplier:</label><br />
+        <input type="text" placeholder="Equity Multiplier" id="EquityMultiplier" oninput="$isValidFloat('#EquityMultiplier')" /><br /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>ROE = <output for="ProfitMargin AssetTurnover EquityMultiplier" id="result" /></p>
+    </form>
+</body>
+</html>

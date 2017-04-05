@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Degree of Financial Leverage</title>
+    <script src="./javascripts/DFLCalculator.js"></script>
+    <script src="./javascripts/validation.js"></script>
+    <script src="./public/javascripts/jquery.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Degree of Financial Leverage</h1>
+    <p>This equation is used to determine the Degree of Financial Leverage (DFL) using the percent change in Earnings Per Share (EPS) and the percent change in Earnings Before Interest and Taxes (EBIT).</p>
+
+    <h3>Equation</h3>
+    \( DFL = {\frac{\% \ Change \ in \ EPS}{\% \ Change \ in \ EBIT}} \)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=PercentChangeInEps>% Change in EPS:</label><br />
+        <input type="text" placeholder="% Change in EPS" id="PercentChangeInEps" oninput="$isValidPercent('#PercentChangeInEps')" /><br />
+        <label for=PercentChangeInEbit>% Change in EBIT:</label><br />
+        <input type="text" placeholder="% Change in EBIT" id="PercentChangeInEbit" oninput="$isValidPercent('#PercentChangeInEbit')" /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>DFL = <output for="PercentChangeInEps PercentChangeInEbit" id="result" /></p>
+    </form>
+</body>
+</html>
