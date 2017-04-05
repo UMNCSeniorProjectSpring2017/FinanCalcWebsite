@@ -40,7 +40,7 @@ Capital budgeting
 - [ ] Cost of preferred stock
 - [ ] Required rate of return of a common stock
 - [ ] Earnings before depreciation and taxes
-- [ ] Comparing two potential investments
+- [x] Payback Period (justin)
 - [ ] Net present value of an investment
 - [ ] Expected values and standard deviations
 

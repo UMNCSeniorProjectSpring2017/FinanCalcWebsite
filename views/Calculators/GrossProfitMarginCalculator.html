@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Future Value Calculator</title>
+    <script src="../../public/javascripts/GrossProfitMarginCalculator.js"></script>
+    <script src="../../public/javascripts/jquery.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Gross Profit Margin</h1>
+    <p>Gross profit margin is a financial metric used to assess a company's financial health and business model by revealing the proportion of money left over from revenues after accounting for the cost of goods sold.</p>
+
+    <h3>Equation</h3>
+    \(Gross Profit Margin = {\frac{Gross Profit}{Net Sales}} \)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=GrossProfit>Gross Income:</label><br />
+        <input type="text" placeholder="GP" id="GrossProfit" oninput="$isValidFloat('#GrossProfit')" /><br />
+		
+        <label for=NetSales>Net Sales:</label><br />
+        <input type="text" placeholder="NS" id="NetSales" oninput="$isValidFloat('#NetSales')" /><br />
+		
+       		
+        <input type="button" value="Calculate" onclick="$calculate()" />
+		
+        <p>Gross Profit Margin % = <output for="GrossProfit NetSales " id="result" /></p>
+    </form>
+</body>
+</html>

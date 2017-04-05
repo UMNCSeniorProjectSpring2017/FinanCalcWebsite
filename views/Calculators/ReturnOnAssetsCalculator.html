@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Future Value Calculator</title>
+    <script src="../../public/javascripts/ReturnOnAssetsCalculator.js"></script>
+    <script src="../../public/javascripts/jquery.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Return On Assets</h1>
+    <p>The return on assets (ROA) ratio illustrates how well management is employing the company's total assets to make a profit. The higher the return, the more efficient management is in utilizing its asset base. The ROA ratio is calculated by comparing net income to average total assets, and is expressed as a percentage.</p>
+
+    <h3>Equation</h3>
+    \(Return On Assets = {\frac{Net Income}{Total Assets}} \)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=NetIncome>Net Income:</label><br />
+        <input type="text" placeholder="GP" id="NetIncome" oninput="$isValidFloat('#NetIncome')" /><br />
+		
+        <label for=TotalAssets>Total Assets:</label><br />
+        <input type="text" placeholder="NS" id="TotalAssets" oninput="$isValidFloat('#TotalAssets')" /><br />
+		
+       		
+        <input type="button" value="Calculate" onclick="$calculate()" />
+		
+        <p>Return on Assets % = <output for="NetIncome TotalAssets " id="result" /></p>
+    </form>
+</body>
+</html>

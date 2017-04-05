@@ -78,3 +78,7 @@ exports.costOfMissingDiscountCalculator = function (req, res) {
 exports.EOQCalculator = function (req, res) {
     res.render('Calculators/EOQCalculator', { title: 'ejs' });
 };
+
+exports.paybackPeriodCalculator = function (req, res) {
+    res.render('Calculators/PaybackPeriodCalculator', { title: 'ejs' });
+};
