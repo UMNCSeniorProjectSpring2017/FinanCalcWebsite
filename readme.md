@@ -38,7 +38,7 @@ Capital budgeting
 - [ ] Weighted average cost of capital
 - [ ] After tax cost of debt
 - [ ] Cost of preferred stock
-- [ ] Required rate of return of a common stock (Justin)
+- [x] Required rate of return of a common stock (Justin)
 - [ ] Earnings before depreciation and taxes  (Justin)
 - [x] Payback Period (Justin)
 - [ ] Net present value of an investment  (Justin)

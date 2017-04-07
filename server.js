@@ -53,6 +53,7 @@ app.get('/EarningsPerShareCalculator', calculator.earningsPerShareCalculator);
 app.get('/GrossProfitMarginCalculator', calculator.grossProfitMarginCalculator);
 app.get('/OperatingProfitCalculator', calculator.operatingProfitCalculator);
 app.get('/ReturnOnAssetsCalculator', calculator.returnOnAssetsCalculator);
+app.get('/RequiredRateOfReturnCalculator', calculator.requiredRateOfReturnCalculator);
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');
