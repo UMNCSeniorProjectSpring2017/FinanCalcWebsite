@@ -38,11 +38,11 @@ Capital budgeting
 - [ ] Weighted average cost of capital
 - [ ] After tax cost of debt
 - [ ] Cost of preferred stock
-- [ ] Required rate of return of a common stock
-- [ ] Earnings before depreciation and taxes
-- [x] Payback Period (justin)
-- [ ] Net present value of an investment
-- [ ] Expected values and standard deviations
+- [ ] Required rate of return of a common stock (Justin)
+- [ ] Earnings before depreciation and taxes  (Justin)
+- [x] Payback Period (Justin)
+- [ ] Net present value of an investment  (Justin)
+- [ ] Expected values and standard deviations  (Justin)
 
 Long-Term financing
 - [x] Dilution of stock value (Diluted EPS) (Abraham Hosch)
