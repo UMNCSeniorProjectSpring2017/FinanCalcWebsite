@@ -1,16 +1,5 @@
 ﻿"use strict";
 
-function isFloat(str) {
-    for (var i in str) {
-        var chr = str[i]
-        if (isNaN(parseInt(chr)) && chr !== '.') {
-            return false;
-        }
-    }
-
-    return true;
-}
-
 function $calculate() {
     if (!isFloat($("#NetRevenue")[0].value) ||
         !isFloat($("#CostOfGoodsSold")[0].value) ||
@@ -30,17 +19,6 @@ function $calculate() {
     var OperatingProfitMargin = (OperatingProfit / NetRevenue) * 100;
     $("#result").html(OperatingProfitMargin);
 
-    recordUsage();
+    recordUsage("OperatingProfitMarginCalculator");
 }
 
-function recordUsage() {
-    $.post("/LogUsage", { calculator: "OperatingProfitMarginCalculator" });
-}
-
-function $isValidFloat(id) {
-    if (!isFloat($(id)[0].value)) {
-        $(id).css("color", "Red");
-    } else {
-        $(id).css("color", "Black");
-    }
-}

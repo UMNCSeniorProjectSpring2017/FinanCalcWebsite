@@ -3,10 +3,10 @@
 ## Equations
 
 Capital Management
-- [ ] Earnings per share (Justin Thomas)
-- [ ] Gross profit margin (Justin Thomas)
-- [ ] Operating profit (Justin Thomas)
-- [ ] Return on assets (Justin Thomas)
+- [x] Earnings per share (Justin Thomas)
+- [x] Gross profit margin (Justin Thomas)
+- [x] Operating profit (Justin Thomas)
+- [x] Return on assets (Justin Thomas)
 - [x] Return on equity (Mike Singh)
 - [x] Du Pont Method (total asset turnover) (Abraham Hosch)
 

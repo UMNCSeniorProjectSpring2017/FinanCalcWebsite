@@ -49,6 +49,10 @@ app.get('/EffectiveInterestRateCalculator', calculator.effectiveInterestRateCalc
 app.get('/CostOfMissingDiscountCalculator', calculator.costOfMissingDiscountCalculator);
 app.get('/EconomicOrderingQuantityCalculator', calculator.EOQCalculator);
 app.get('/PaybackPeriodCalculator', calculator.paybackPeriodCalculator);
+app.get('/EarningsPerShareCalculator', calculator.earningsPerShareCalculator);
+app.get('/GrossProfitMarginCalculator', calculator.grossProfitMarginCalculator);
+app.get('/OperatingProfitCalculator', calculator.operatingProfitCalculator);
+app.get('/ReturnOnAssetsCalculator', calculator.returnOnAssetsCalculator);
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');

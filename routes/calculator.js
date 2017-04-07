@@ -82,3 +82,19 @@ exports.EOQCalculator = function (req, res) {
 exports.paybackPeriodCalculator = function (req, res) {
     res.render('Calculators/PaybackPeriodCalculator', { title: 'ejs' });
 };
+
+exports.earningsPerShareCalculator = function (req, res) {
+    res.render('Calculators/EarningsPerShareCalculator', { title: 'ejs' });
+};
+
+exports.grossProfitMarginCalculator = function (req, res) {
+    res.render('Calculators/GrossProfitMarginCalculator', { title: 'ejs' });
+};
+
+exports.operatingProfitCalculator = function (req, res) {
+    res.render('Calculators/OperatingProfitCalculator', { title: 'ejs' });
+};
+
+exports.returnOnAssetsCalculator = function (req, res) {
+    res.render('Calculators/ReturnOnAssetsCalculator', { title: 'ejs' });
+};
