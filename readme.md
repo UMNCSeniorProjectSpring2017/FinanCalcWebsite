@@ -13,7 +13,6 @@ Capital Management
 Capital Budgeting
 - [x] Break-even point (Abraham Hosch)
 - [x] Contribution margin (Abraham Hosch)
-- [ ] Total expected value of sales projections (Abraham Hosch)
 - [x] Degree of Operating leverage (Abraham Hosch)
 - [x] Degree of financial leverage (Abraham Hosch)
 - [x] Degree of combined leverage (Abraham Hosch)
@@ -21,7 +20,6 @@ Capital Budgeting
 
 Working Capital Management
 - [x] Average collection period (Abraham Hosch)
-- [ ] Carrying cost per unit (Abraham Hosch)
 - [x] Economic ordering quantity (Abraham Hosch)
 - [x] Cost of not taking repayment discounts (Cost of Missing Discount) (Abraham Hosch)
 - [x] Effective interest rate (Abraham Hosch)
