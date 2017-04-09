@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Residual Claims to Earnings Calculator</title>
+    <script src="./javascripts/ResidualClaimsToEarningsCalculator.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <script src=".//javascripts/validation.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Residual Claims to Earnings</h1>
+    <p>This equation is used to determine residual claims to earnings.</p>
+
+    <h3>Equation</h3>
+    \(Residual \ Claims \ to \ Earnings = Preferred Stock Dividend + Common Stock Earnings \)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=PreferredStockDividend>Preferred Stock Dividend:</label><br />
+        <input type="text" placeholder="PSD" id="PreferredStockDividend" oninput="$isValidFloat('#PreferredStockDividend')" /><br />
+        <label for=CommonStockEarnings>Common Stock Earnings:</label><br />
+        <input type="text" placeholder="CSE" id="CommonStockEarnings" oninput="$isValidFloat('#CommonStockEarnings')" /><br /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>Residual claims to earnings = <output for="PreferredStockDividend CommonStockEarnings" id="result" /></p>
+    </form>
+</body>
+</html>

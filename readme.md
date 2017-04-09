@@ -48,8 +48,8 @@ Long-Term financing
 
 PE ratio
 - [ ] Yield to maturity (Mark Becker)
-- [ ] Coupon rate (Mark Becker)
-- [ ] Residual claims to earnings (Mark Becker)
+- [x] Coupon rate (Mark Becker)
+- [x] Residual claims to earnings (Mark Becker)
 - [ ] Value of one right to buy stock
 - [x] Price-earnings ratio (Mike Singh)
 - [ ] Discount rate

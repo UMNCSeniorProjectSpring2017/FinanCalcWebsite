@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Yeild to Maturity</title>
+    <script src="./javascripts/YeildToMaturityCalculator.js"></script>
+    <script src="./javascripts/validation.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Yeild to Maturity</h1>
+    <p>This equation is used to determine the yeild to maturity.</p>
+
+    <h3>Equation</h3>
+    \(Yeild \ to \ Maturity = \Big[{\frac{ C &plus; ((F &minus; P)/ N) }{(F &plus; P) / 2}}\Big] \)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=CouponIntrestPayment>Coupon Intrest Payment:</label><br />
+        <input type="text" placeholder="C" id="CouponIntrestPayment" oninput="$isValidFloat('#CouponIntrestPayment')" /><br />
+        <label for=FaceValue>Face Value:</label><br />
+        <input type="text" placeholder="F" id="FaceValue" oninput="$isValidFloat('#FaceValue')" /><br />
+        <label for=Price>Price:</label><br />
+        <input type="text" placeholder="P" id="Price" oninput="$isValidFloat('#Price')" /><br />
+        <label for=YearsToMaturity>Years to Maturity:</label><br />
+        <input type="text" placeholder="N" id="YearsToMaturity" oninput="$isValidFloat('#YearsToMaturity')" /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>Yeild to Maturity = <output for="CouponIntrestPayment FaceValue Price YearsToMaturity" id="result" /></p>
+    </form>
+</body>
+</html>

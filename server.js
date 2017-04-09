@@ -43,6 +43,9 @@ app.get('/PriceOfACommonStockTodayCalculator', calculator.priceOfACommonStockTod
 app.get('/BreakEvenPointCalculator', calculator.breakEvenPoint);
 app.get('/ContributionMarginCalculator', calculator.contributionMargin);
 app.get('/DilutedEarningsPerShareCalculator', calculator.dilutedEarningsPerShare);
+app.get('/YeildToMaturityCalculator', calculator.yeildToMaturityCalculator);
+app.get('/CouponRateCalculator', calculator.couponRate);
+app.get('/ResidualClaimsToEarningsCalculator', calculator.ResidualClaimsToEarnings);
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');
