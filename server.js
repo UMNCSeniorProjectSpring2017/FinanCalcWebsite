@@ -38,14 +38,16 @@ app.get('/DCLCalculator', calculator.DCLCalculator);
 app.get('/OperatingIncomeCalculator', calculator.operatingIncomeCalculator);
 app.get('/ReturnOnEquityCalculator', calculator.ROECalculator);
 app.get('/FutureValueOfAnnuityCalculator', calculator.futureValueOfAnnuityCalculator);
-app.get('/PresentValueOfAnnuityCalculator', calculator.PresentValueOfAnnuityCalculator);
+app.get('/PresentValueOfAnnuityCalculator', calculator.presentValueOfAnnuityCalculator);
 app.get('/PriceOfACommonStockTodayCalculator', calculator.priceOfACommonStockTodayCalculator);
-app.get('/BreakEvenPointCalculator', calculator.breakEvenPoint);
-app.get('/ContributionMarginCalculator', calculator.contributionMargin);
-app.get('/DilutedEarningsPerShareCalculator', calculator.dilutedEarningsPerShare);
-app.get('/YeildToMaturityCalculator', calculator.yeildToMaturityCalculator);
-app.get('/CouponRateCalculator', calculator.couponRate);
-app.get('/ResidualClaimsToEarningsCalculator', calculator.ResidualClaimsToEarnings);
+app.get('/BreakEvenPointCalculator', calculator.breakEvenPointCalculator);
+app.get('/ContributionMarginCalculator', calculator.contributionMarginCalculator);
+app.get('/DilutedEarningsPerShareCalculator', calculator.dilutedEarningsPerShareCalculator);
+app.get('/DuPontMethodCalculator', calculator.duPontMethodCalculator);
+app.get('/AverageCollectionPeriodCalculator', calculator.averageCollectionPeriodCalculator);
+app.get('/EffectiveInterestRateCalculator', calculator.effectiveInterestRateCalculator);
+app.get('/CostOfMissingDiscountCalculator', calculator.costOfMissingDiscountCalculator);
+app.get('/EconomicOrderingQuantityCalculator', calculator.EOQCalculator);
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');

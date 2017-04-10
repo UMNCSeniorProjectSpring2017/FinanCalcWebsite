@@ -8,7 +8,7 @@ Capital Management
 - [ ] Operating profit (Justin Thomas)
 - [ ] Return on assets (Justin Thomas)
 - [x] Return on equity (Mike Singh)
-- [ ] Du Pont Method (total asset turnover) (Abraham Hosch)
+- [x] Du Pont Method (total asset turnover) (Abraham Hosch)
 
 Capital Budgeting
 - [x] Break-even point (Abraham Hosch)
@@ -20,10 +20,11 @@ Capital Budgeting
 - [x] Operating income (Abraham Hosch)
 
 Working Capital Management
-- [ ] Average collection period (Abraham Hosch)
+- [x] Average collection period (Abraham Hosch)
 - [ ] Carrying cost per unit (Abraham Hosch)
-- [ ] Cost of not taking repayment discounts (Abraham Hosch)
-- [ ] Effective interest rate (Abraham Hosch)
+- [x] Economic ordering quantity (Abraham Hosch)
+- [x] Cost of not taking repayment discounts (Cost of Missing Discount) (Abraham Hosch)
+- [x] Effective interest rate (Abraham Hosch)
 
 Capital budgeting
 - [x] Future value of money (single amount) (Abraham Hosch)
