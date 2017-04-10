@@ -48,6 +48,9 @@ app.get('/AverageCollectionPeriodCalculator', calculator.averageCollectionPeriod
 app.get('/EffectiveInterestRateCalculator', calculator.effectiveInterestRateCalculator);
 app.get('/CostOfMissingDiscountCalculator', calculator.costOfMissingDiscountCalculator);
 app.get('/EconomicOrderingQuantityCalculator', calculator.EOQCalculator);
+app.get('/YieldToMaturityCalculator', calculator.yieldToMaturity);
+app.get('/CouponRateCalculator', calculator.couponRate);
+app.get('/ResidualClaimsToEarningsCalculator', calculator.residualClaimsToEarnings);
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');
