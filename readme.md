@@ -49,7 +49,7 @@ PE ratio
 - [ ] Yield to maturity (Mark Becker)
 - [ ] Coupon rate (Mark Becker)
 - [ ] Residual claims to earnings (Mark Becker)
-- [ ] Value of one right to buy stock
+- [ ] Value of one right to buy stock (Tyler Oppegaard)
 - [x] Price-earnings ratio (Mike Singh)
-- [ ] Discount rate
-- [ ] Effects of the issuances of new stock shares on price
+- [ ] Discount rate (Tyler Oppegaard)
+- [ ] Effects of the issuances of new stock shares on price (Tyler Oppegaard)
