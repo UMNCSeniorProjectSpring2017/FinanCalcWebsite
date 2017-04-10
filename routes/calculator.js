@@ -79,8 +79,8 @@ exports.dilutedEarningsPerShare = function (req, res) {
     res.render('Calculators/DilutedEarningsPerShareCalculator', { title: 'ejs' });
 };
 
-exports.yeildToMaturity = function (req, res) {
-    res.render('Calculators/YeildToMaturityCalculator', { title: 'ejs' });
+exports.yieldToMaturity = function (req, res) {
+    res.render('Calculators/YieldToMaturityCalculator', { title: 'ejs' });
 };
 
 exports.couponRate = function (req, res) {

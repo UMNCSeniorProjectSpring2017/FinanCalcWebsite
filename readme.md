@@ -48,7 +48,7 @@ Long-Term financing
 - [x] Dilution of stock value (Diluted EPS) (Abraham Hosch)
 
 PE ratio
-- [ ] Yield to maturity (Mark Becker)
+- [x] Yield to maturity (Mark Becker)
 - [x] Coupon rate (Mark Becker)
 - [x] Residual claims to earnings (Mark Becker)
 - [ ] Value of one right to buy stock

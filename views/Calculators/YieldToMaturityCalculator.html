@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Yeild to Maturity</title>
-    <script src="./javascripts/YeildToMaturityCalculator.js"></script>
+    <title>Yield to Maturity</title>
+    <script src="./javascripts/YieldToMaturityCalculator.js"></script>
     <script src="./javascripts/validation.js"></script>
     <script src="./javascripts/jquery.js"></script>
     <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
@@ -14,16 +14,16 @@
     </script>
 </head>
 <body>
-    <h1>Yeild to Maturity</h1>
-    <p>This equation is used to determine the yeild to maturity.</p>
+    <h1>Yield to Maturity</h1>
+    <p>This equation is used to determine the yield to maturity.</p>
 
     <h3>Equation</h3>
-    \(Yeild \ to \ Maturity = \Big[{\frac{ C &plus; ((F &minus; P)/ N) }{(F &plus; P) / 2}}\Big] \)
+    \(Yield \ to \ Maturity = \Big[{\frac{ C &plus; ((F &minus; P)/ N) }{(F &plus; P) / 2}}\Big] \)
 
     <h3>Calculator</h3>
     <form>
-        <label for=CouponIntrestPayment>Coupon Intrest Payment:</label><br />
-        <input type="text" placeholder="C" id="CouponIntrestPayment" oninput="$isValidFloat('#CouponIntrestPayment')" /><br />
+        <label for=CouponInterestPayment>Coupon Interest Payment:</label><br />
+        <input type="text" placeholder="C" id="CouponInterestPayment" oninput="$isValidFloat('#CouponInterestPayment')" /><br />
         <label for=FaceValue>Face Value:</label><br />
         <input type="text" placeholder="F" id="FaceValue" oninput="$isValidFloat('#FaceValue')" /><br />
         <label for=Price>Price:</label><br />
@@ -31,7 +31,7 @@
         <label for=YearsToMaturity>Years to Maturity:</label><br />
         <input type="text" placeholder="N" id="YearsToMaturity" oninput="$isValidFloat('#YearsToMaturity')" /><br />
         <input type="button" value="Calculate" onclick="$calculate()" />
-        <p>Yeild to Maturity = <output for="CouponIntrestPayment FaceValue Price YearsToMaturity" id="result" /></p>
+        <p>Yield to Maturity = <output for="CouponInterestPayment FaceValue Price YearsToMaturity" id="result" /></p>
     </form>
 </body>
 </html>

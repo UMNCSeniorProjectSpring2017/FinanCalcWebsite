@@ -1,7 +1,7 @@
 "use strict";
 
 function $calculate() {
-    if (!isFloat($("#CouponIntrestPayment")[0].value) ||
+    if (!isFloat($("#CouponInterestPayment")[0].value) ||
         !isFloat($("#FaceValue")[0].value) ||
         !isFloat($("#Price")[0].value) ||
         !isFloat($("#YearsToMaturity")[0].value)) {
@@ -10,13 +10,13 @@ function $calculate() {
         return;
     }
 
-    var couponIntrestPayment = parseFloat($("#CouponIntrestPayment")[0].value);
+    var couponInterestPayment = parseFloat($("#CouponInterestPayment")[0].value);
     var faceValue = parseFloat($("#FaceValue")[0].value);
     var price = parseFloat($("#Price")[0].value);
     var yearsToMaturity = parseFloat($("#YearsToMaturity")[0].value);
 
-    var yeildToMaturity = (couponIntrestPayment + ((faceValue - price) / yearsToMaturity)) / ((faceValue + price) / 2);
-    $("#result").html(yeildToMaturity);
+    var yieldToMaturity = (couponInterestPayment + ((faceValue - price) / yearsToMaturity)) / ((faceValue + price) / 2);
+    $("#result").html(yieldToMaturity);
 
-    recordUsage("YeildToMaturityCalculator");
+    recordUsage("YieldToMaturityCalculator");
 }
