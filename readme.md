@@ -30,9 +30,9 @@ Capital budgeting
 - [x] Future value of an annuity (Mark Becker)
 - [x] Present value of an annuity (Mark Becker)
 - [x] Price of a common stock today (Mark Becker)
-- [ ] Risk-free rate of return
-- [ ] Present value of a bonds interest payments
-- [ ] Present value of principal payment (par value) at maturity
+- [ ] Risk-free rate of return (Mark Becker)
+- [ ] Present value of a bonds interest payments (Mark Becker)
+- [ ] Present value of principal payment (par value) at maturity (Mark Becker)
 - [ ] Weighted average cost of capital
 - [ ] After tax cost of debt
 - [ ] Cost of preferred stock
