@@ -122,3 +122,7 @@ exports.operatingProfitMarginCalculator = function (req, res) {
 exports.returnOnAssetsCalculator = function (req, res) {
     res.render('Calculators/ReturnOnAssetsCalculator', { title: 'ejs' });
 };
+
+exports.requiredRateOfReturnCalculator = function (req, res) {
+    res.render('Calculators/RequiredRateOfReturnCalculator', { title: 'ejs' });
+};
