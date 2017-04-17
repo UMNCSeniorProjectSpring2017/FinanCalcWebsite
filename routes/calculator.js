@@ -115,8 +115,8 @@ exports.grossProfitMarginCalculator = function (req, res) {
     res.render('Calculators/GrossProfitMarginCalculator', { title: 'ejs' });
 };
 
-exports.operatingProfitCalculator = function (req, res) {
-    res.render('Calculators/OperatingProfitCalculator', { title: 'ejs' });
+exports.operatingProfitMarginCalculator = function (req, res) {
+    res.render('Calculators/OperatingProfitMarginCalculator', { title: 'ejs' });
 };
 
 exports.returnOnAssetsCalculator = function (req, res) {
