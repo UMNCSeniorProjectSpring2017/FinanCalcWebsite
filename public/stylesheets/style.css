@@ -51,6 +51,11 @@ content {
   width: 505px;
 }
 
+header {
+  border-bottom: 1px solid #044375;
+  margin-bottom: 5px;
+}
+
 footer {
   margin: -10px;
   margin-top: 10px;
