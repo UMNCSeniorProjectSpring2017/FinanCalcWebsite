@@ -1,11 +1,13 @@
+html {
+  padding: 10px;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  margin: 0 auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: auto;
   padding: 10px;
-  width: 780px;
+  max-width: 780px;
   background: #FFF;
   border: 10px solid #044375;
 }
@@ -15,12 +17,26 @@ h1, h2, p, ul, li {
   padding: 0;
 }
 
+h3 {
+  margin: 15px 0 10px 0;
+}
+
 p, h2 {
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
 }
 
 ul {
   list-style-type: none;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: -15px;
+}
+
+input[type="button"]{
+  margin-bottom: 10px;
 }
 
 #header h1 {
@@ -30,30 +46,31 @@ ul {
   letter-spacing: -1px;
 }
 
-#nav {
+nav {
   margin: 10px 0 0 0;
   padding: 10px;
   background: #044375;
   border-top: 5px solid #033761;
 }
 
-#nav ul li {
+nav ul li {
   display: inline;
   margin: 0 10px 0 10px;
 }
 
-#nav a {
+nav a {
   color: #00B7FF;
   text-decoration: none;
 }
 
-#content {
+content {
   margin: 10px 0 0 0;
   padding: 10px;
   float: center;
   width: 505px;
 }
-#footer {
+
+footer {
   clear: both;
   padding: 10px;
   background: #eee;
