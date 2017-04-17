@@ -57,6 +57,9 @@ app.get('/RequiredRateOfReturnCalculator', calculator.requiredRateOfReturnCalcul
 app.get('/YieldToMaturityCalculator', calculator.yieldToMaturity);
 app.get('/CouponRateCalculator', calculator.couponRate);
 app.get('/ResidualClaimsToEarningsCalculator', calculator.residualClaimsToEarnings);
+app.get('/EarninigsBeforeDepreciationAndTaxesCalculator', calculator.earninigsBeforeDepreciationAndTaxesCalculator);
+app.get('/NetPresentValueFiveYearCalculator', calculator.netPresentValueFiveYearCalculator);
+
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');
