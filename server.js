@@ -48,9 +48,9 @@ app.get('/AverageCollectionPeriodCalculator', calculator.averageCollectionPeriod
 app.get('/EffectiveInterestRateCalculator', calculator.effectiveInterestRateCalculator);
 app.get('/CostOfMissingDiscountCalculator', calculator.costOfMissingDiscountCalculator);
 app.get('/EconomicOrderingQuantityCalculator', calculator.EOQCalculator);
-/*app.get('/PaybackPeriodCalculator', calculator.paybackPeriodCalculator);
+app.get('/PaybackPeriodCalculator', calculator.paybackPeriodCalculator);
 app.get('/EarningsPerShareCalculator', calculator.earningsPerShareCalculator);
-app.get('/GrossProfitMarginCalculator', calculator.grossProfitMarginCalculator);
+/*app.get('/GrossProfitMarginCalculator', calculator.grossProfitMarginCalculator);
 app.get('/OperatingProfitCalculator', calculator.operatingProfitCalculator);
 app.get('/ReturnOnAssetsCalculator', calculator.returnOnAssetsCalculator);
 app.get('/RequiredRateOfReturnCalculator', calculator.requiredRateOfReturnCalculator);*/
