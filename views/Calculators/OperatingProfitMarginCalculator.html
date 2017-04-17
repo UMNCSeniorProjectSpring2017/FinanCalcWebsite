@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Future Value Calculator</title>
+    <script src="./javascripts/OperatingProfitMarginCalculator.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+	<script src="./javascripts/validation.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Operating Profit Margin</h1>
+    <p>Operating profit margin is a measurement of what proportion of a company's revenue is left over after paying for variable costs of production such as wages, raw materials, etc.</p>
+
+    <h3>Equation 1</h3>
+    \(Operating Profit = {Net Revenue - Cost of Goods Sold - Labor - General Admin Expenses} \)
+	
+    <h3>Equation 2</h3>
+    \(Operating Profit Margin = {Operating Profit / Net Revenue } \)
+	
+    <h3>Calculator</h3>
+    <form>
+        <label for=NetRevenue>Net Revenue:</label><br />
+        <input type="text" placeholder="NR" id="NetRevenue" oninput="$isValidFloat('#NetRevenue')" /><br />
+		
+        <label for=CostOfGoodsSold>Cost of Goods Sold:</label><br />
+        <input type="text" placeholder="COGS" id="CostOfGoodsSold" oninput="$isValidFloat('#CostOfGoodsSold')" /><br />
+		
+        <label for=Labor>Labor:</label><br />
+        <input type="text" placeholder="L" id="Labor" oninput="$isValidFloat('#Labor')" /><br />
+			
+		<label for=AdministrationExpenses>Administration Expenses:</label><br />
+        <input type="text" placeholder="AE" id="AdministrationExpenses" oninput="$isValidFloat('#AdministrationExpenses')" /><br /><br />
+		
+		
+		
+        <input type="button" value="Calculate" onclick="$calculate()" />
+		
+        <p>Operating Profit Margin % = <output for="NetRevenue CostOfGoodsSold Labor AdministrationExpenses" id="result" /></p>
+    </form>
+</body>
+</html>
