@@ -99,6 +99,10 @@ app.post("/LogUsage", function (req, res) {
 
 });
 
+app.post("/Search", function(req, res){
+    res.redirect("https://www.google.com/#q=" + req.body.query);
+});
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
