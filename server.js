@@ -54,6 +54,9 @@ app.get('/GrossProfitMarginCalculator', calculator.grossProfitMarginCalculator);
 app.get('/OperatingProfitCalculator', calculator.operatingProfitCalculator);
 app.get('/ReturnOnAssetsCalculator', calculator.returnOnAssetsCalculator);
 app.get('/RequiredRateOfReturnCalculator', calculator.requiredRateOfReturnCalculator);
+app.get('/YieldToMaturityCalculator', calculator.yieldToMaturity);
+app.get('/CouponRateCalculator', calculator.couponRate);
+app.get('/ResidualClaimsToEarningsCalculator', calculator.residualClaimsToEarnings);
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');
