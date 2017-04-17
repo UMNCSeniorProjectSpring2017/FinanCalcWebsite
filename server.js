@@ -99,7 +99,7 @@ app.post("/LogUsage", function (req, res) {
 
 });
 
-app.post("/Search", function(req, res){
+app.get("/Search", function(req, res){
     res.redirect("https://www.google.com/#q=" + req.body.query);
 });
 
