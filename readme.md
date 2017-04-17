@@ -3,10 +3,10 @@
 ## Equations
 
 Capital Management
-- [ ] Earnings per share (Justin Thomas)
-- [ ] Gross profit margin (Justin Thomas)
-- [ ] Operating profit (Justin Thomas)
-- [ ] Return on assets (Justin Thomas)
+- [x] Earnings per share (Justin Thomas)
+- [x] Gross profit margin (Justin Thomas)
+- [x] Operating profit (Justin Thomas)
+- [x] Return on assets (Justin Thomas)
 - [x] Return on equity (Mike Singh)
 - [x] Du Pont Method (total asset turnover) (Abraham Hosch)
 
@@ -36,11 +36,11 @@ Capital budgeting
 - [ ] Weighted average cost of capital
 - [ ] After tax cost of debt
 - [ ] Cost of preferred stock
-- [ ] Required rate of return of a common stock
-- [ ] Earnings before depreciation and taxes
-- [ ] Comparing two potential investments
-- [ ] Net present value of an investment
-- [ ] Expected values and standard deviations
+- [x] Required rate of return of a common stock (Justin Thomas)
+- [ ] Earnings before depreciation and taxes  (Justin Thomas)
+- [x] Payback Period (Justin Thomas)
+- [ ] Net present value of an investment  (Justin Thomas)
+- [ ] Expected values and standard deviations  (Justin Thomas)
 
 Long-Term financing
 - [x] Dilution of stock value (Diluted EPS) (Abraham Hosch)
