@@ -100,7 +100,7 @@ app.post("/LogUsage", function (req, res) {
 });
 
 app.get("/Search", function(req, res){
-    res.redirect("https://www.google.com/#q=" + req.query.query);
+    res.redirect("https://www.google.com/#q=site:financalc.azurewebsites.net+" + req.query.query);
 });
 
 http.createServer(app).listen(app.get('port'), function(){
