@@ -67,27 +67,27 @@ exports.averageCollectionPeriodCalculator = function (req, res) {
     res.render('Calculators/AverageCollectionPeriodCalculator', { title: 'ejs' });
 };
 
-exports.breakEvenPoint = function (req, res) {
+exports.breakEvenPointCalculator = function (req, res) {
     res.render('Calculators/BreakEvenPointCalculator', { title: 'ejs' });
 };
 
-exports.contributionMargin = function (req, res) {
+exports.contributionMarginCalculator = function (req, res) {
     res.render('Calculators/ContributionMarginCalculator', { title: 'ejs' });
 };
 
-exports.dilutedEarningsPerShare = function (req, res) {
+exports.dilutedEarningsPerShareCalculator = function (req, res) {
     res.render('Calculators/DilutedEarningsPerShareCalculator', { title: 'ejs' });
 };
 
-exports.yieldToMaturity = function (req, res) {
+exports.yieldToMaturityCalculator = function (req, res) {
     res.render('Calculators/YieldToMaturityCalculator', { title: 'ejs' });
 };
 
-exports.couponRate = function (req, res) {
+exports.couponRateCalculator = function (req, res) {
     res.render('Calculators/CouponRateCalculator', { title: 'ejs' });
 };
 
-exports.residualClaimsToEarnings = function (req, res) {
+exports.residualClaimsToEarningsCalculator = function (req, res) {
     res.render('Calculators/ResidualClaimsToEarningsCalculator', { title: 'ejs' });
 };
 
