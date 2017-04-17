@@ -10,14 +10,14 @@ function $calculate() {
         return;
     }
 
-    var NetRevenue = parseFloat($("#NetRevenue")[0].value);
-    var CostOfGoodsSold = parseFloat($("#CostOfGoodsSold")[0].value);
-	var Labor = parseFloat($("#Labor")[0].value);
-    var AdministrationExpenses = parseFloat($("#AdministrationExpenses")[0].value);
+    var netRevenue = parseFloat($("#NetRevenue")[0].value);
+    var costOfGoodsSold = parseFloat($("#CostOfGoodsSold")[0].value);
+	var labor = parseFloat($("#Labor")[0].value);
+    var administrationExpenses = parseFloat($("#AdministrationExpenses")[0].value);
 
-	var OperatingProfit = NetRevenue - CostOfGoodsSold - AdministrationExpenses - Labor;
-    var OperatingProfitMargin = (OperatingProfit / NetRevenue) * 100;
-    $("#result").html(OperatingProfitMargin);
+	var operatingProfit = netRevenue - costOfGoodsSold - administrationExpenses - labor;
+    var operatingProfitMargin = (operatingProfit / netRevenue) * 100;
+    $("#result").html(operatingProfitMargin);
 
     recordUsage("OperatingProfitMarginCalculator");
 }

@@ -1,12 +1,23 @@
 {
-  "name": "WebMatrixExpressSite",
-  "version": "0.2.0",
-  "author": "The WebMatrix Team <webmatrix@microsoft.com>",
-  "description": "A simple boilerplate for building node applications on Windows Azure (or wherever)",
+  "name": "FinanCalc",
+  "version": "1.0",
+  "author": "FinanCalc Team",
+  "description": "A set of financial calculators",
   "contributors": [
     {
-      "name": "Microsoft",
-      "email": "appgal@microsoft.com"
+      "name": "Abraham Hosch"
+    },
+    {
+      "name": "Chetram Singh"
+    },
+    {
+      "name": "Justin Thomas"
+    },
+    {
+      "name": "Mark Becker"
+    },
+    {
+      "name": "Tyler Oppegaard"
     }
   ],
   "main": "./server.js",
@@ -16,7 +27,6 @@
     "express"
   ],
   "dependencies": {
-    "jade": "*",
     "express": "~3.1.0"
   },
   "noAnalyze": true,
