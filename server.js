@@ -50,9 +50,9 @@ app.get('/CostOfMissingDiscountCalculator', calculator.costOfMissingDiscountCalc
 app.get('/EconomicOrderingQuantityCalculator', calculator.EOQCalculator);
 app.get('/PaybackPeriodCalculator', calculator.paybackPeriodCalculator);
 app.get('/EarningsPerShareCalculator', calculator.earningsPerShareCalculator);
-/*app.get('/GrossProfitMarginCalculator', calculator.grossProfitMarginCalculator);
+app.get('/GrossProfitMarginCalculator', calculator.grossProfitMarginCalculator);
 app.get('/OperatingProfitCalculator', calculator.operatingProfitCalculator);
-app.get('/ReturnOnAssetsCalculator', calculator.returnOnAssetsCalculator);
+/*app.get('/ReturnOnAssetsCalculator', calculator.returnOnAssetsCalculator);
 app.get('/RequiredRateOfReturnCalculator', calculator.requiredRateOfReturnCalculator);*/
 app.get('/YieldToMaturityCalculator', calculator.yieldToMaturityCalculator);
 app.get('/CouponRateCalculator', calculator.couponRateCalculator);
