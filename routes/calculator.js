@@ -126,3 +126,11 @@ exports.returnOnAssetsCalculator = function (req, res) {
 exports.requiredRateOfReturnCalculator = function (req, res) {
     res.render('Calculators/RequiredRateOfReturnCalculator', { title: 'ejs' });
 };
+
+exports.netPresentValueCalculator = function (req, res) {
+    res.render('Calculators/NetPresentValueCalculator', { title: 'ejs' });
+};
+
+exports.costOfPreferredStockCalculator = function (req, res) {
+    res.render('Calculators/CostOfPreferredStockCalculator', { title: 'ejs' });
+};
