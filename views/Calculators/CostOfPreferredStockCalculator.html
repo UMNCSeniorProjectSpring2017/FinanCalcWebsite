@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Cost Of Preferred Stock</title>
+    <script src="./javascripts/CostOfPreferredStockCalculator.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <script src="./javascripts/validation.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Cost Of Preferred Stock  </h1>
+    <p>This equation is used to calcuate the cost of preferred stock.</p>
+
+    <h3>Equation</h3>
+    \(Cost \ of \ stock = {\frac{annual \ div \ payment}{stock \ price}} \)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=AnnualDividendPayment>Annual Dividend Payment:</label><br />
+        <input type="text" placeholder="Annual Dividend Payment" id="AnnualDividendPayment" oninput="$isValidFloat('#AnnualDividendPayment')" /><br />
+        <label for=RateOfReturn>Preferred Stock Price ( current market price ):</label><br />
+        <input type="text" placeholder="Preferred Stock Price" id="PreferredStockPrice" oninput="$isValidFloat('#PreferredStockPrice')" /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>Cost Of Preferred Stock = <output for="AnnualDividendPayment PreferredStockPrice" id="result" /></p>
+    </form>
+</body>
+</html>

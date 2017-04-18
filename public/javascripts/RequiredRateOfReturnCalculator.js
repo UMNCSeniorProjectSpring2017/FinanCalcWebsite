@@ -9,11 +9,11 @@ function $calculate() {
         return;
     }
 
-    var Priceofthestocktoday = parseFloat($("#Priceofthestocktoday")[0].value);
-    var Dividend = parseFloat($("#Dividend")[0].value);
-    var GrowthRate = parseFloat($("#GrowthRate")[0].value);
+    var priceOfTheStockToday = parseFloat($("#Priceofthestocktoday")[0].value);
+    var dividend = parseFloat($("#Dividend")[0].value);
+    var growthRate = parseFloat($("#GrowthRate")[0].value);
 
-    var requiredRateOfReturnCalculator = 100 * ((Dividend / Priceofthestocktoday) + (GrowthRate / 100));
+    var requiredRateOfReturnCalculator = 100 * ((dividend / priceOfTheStockToday) + (growthRate / 100));
     $("#result").html(requiredRateOfReturnCalculator);
 
     recordUsage("RequiredRateOfReturnCalculator");

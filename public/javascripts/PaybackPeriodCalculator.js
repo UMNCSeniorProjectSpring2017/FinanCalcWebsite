@@ -5,7 +5,6 @@ function $calculate() {
         !isFloat($("#BBB")[0].value) ||
         !isFloat($("#CCC")[0].value)) {
         
-
         $("#result").html("Bad argument(s)");
         return;
     }
@@ -14,8 +13,8 @@ function $calculate() {
     var BBB = parseFloat($("#BBB")[0].value);
     var CCC = parseFloat($("#CCC")[0].value);
 
-    var PaybackPeriod = AAA + (BBB / CCC);
-    $("#result").html(PaybackPeriod);
+    var paybackPeriod = AAA + (BBB / CCC);
+    $("#result").html(paybackPeriod);
 
     recordUsage("PaybackPeriodCalculator");
 }

@@ -51,15 +51,16 @@ app.get('/EconomicOrderingQuantityCalculator', calculator.EOQCalculator);
 app.get('/PaybackPeriodCalculator', calculator.paybackPeriodCalculator);
 app.get('/EarningsPerShareCalculator', calculator.earningsPerShareCalculator);
 app.get('/GrossProfitMarginCalculator', calculator.grossProfitMarginCalculator);
-app.get('/OperatingProfitCalculator', calculator.operatingProfitCalculator);
+app.get('/OperatingProfitMarginCalculator', calculator.operatingProfitMarginCalculator);
 app.get('/ReturnOnAssetsCalculator', calculator.returnOnAssetsCalculator);
 app.get('/RequiredRateOfReturnCalculator', calculator.requiredRateOfReturnCalculator);
-app.get('/YieldToMaturityCalculator', calculator.yieldToMaturity);
-app.get('/CouponRateCalculator', calculator.couponRate);
-app.get('/ResidualClaimsToEarningsCalculator', calculator.residualClaimsToEarnings);
 app.get('/EarninigsBeforeDepreciationAndTaxesCalculator', calculator.earninigsBeforeDepreciationAndTaxesCalculator);
 app.get('/NetPresentValueFiveYearCalculator', calculator.netPresentValueFiveYearCalculator);
-
+app.get('/YieldToMaturityCalculator', calculator.yieldToMaturityCalculator);
+app.get('/CouponRateCalculator', calculator.couponRateCalculator);
+app.get('/ResidualClaimsToEarningsCalculator', calculator.residualClaimsToEarningsCalculator);
+app.get('/NetPresentValueCalculator', calculator.netPresentValueCalculator);
+app.get('/CostOfPreferredStockCalculator', calculator.costOfPreferredStockCalculator);
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');
@@ -100,6 +101,10 @@ app.post("/LogUsage", function (req, res) {
         fs.appendFileSync('./log/Errors.log', err.message + "\r\n");
     }
 
+});
+
+app.get("/Search", function(req, res){
+    res.redirect("https://www.google.com/#q=site:financalc.azurewebsites.net+" + req.query.query);
 });
 
 http.createServer(app).listen(app.get('port'), function(){

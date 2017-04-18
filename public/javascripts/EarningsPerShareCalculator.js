@@ -9,11 +9,11 @@ function $calculate() {
         return;
     }
 
-    var NetIncome = parseFloat($("#NetIncome")[0].value);
-    var PreferedDividends = parseFloat($("#PreferedDividends")[0].value);
-    var CommonSharesOutstanding = parseFloat($("#CommonSharesOutstanding")[0].value);
+    var netIncome = parseFloat($("#NetIncome")[0].value);
+    var preferedDividends = parseFloat($("#PreferedDividends")[0].value);
+    var commonSharesOutstanding = parseFloat($("#CommonSharesOutstanding")[0].value);
 
-    var earningsPerShare = (NetIncome - PreferedDividends) / CommonSharesOutstanding;
+    var earningsPerShare = (netIncome - preferedDividends) / commonSharesOutstanding;
     $("#result").html(earningsPerShare);
 
     recordUsage("EarningsPerShareCalculator");

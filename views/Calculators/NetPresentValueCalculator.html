@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Net Present Value Formula</title>
+    <script src="./javascripts/NetPresentValueCalculator.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <script src="./javascripts/validation.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Net Present Value Formula  </h1>
+    <p>This equation is used to calcuate the Net present value of an investment.</p>
+
+    <h3>Equation</h3>
+    \(NPV = Net \ Present \ Value \ Inflows &minus; Net \ Present \ Value \ Outflows \)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=NetPresentValueInflows>Net Present Value Inflows:</label><br />
+        <input type="text" placeholder="Net Present Value Inflows" id="NetPresentValueInflows" oninput="$isValidFloat('#NetPresentValueInflows')" /><br />
+        <label for=RateOfReturn>Net Present Value Outflows:</label><br />
+        <input type="text" placeholder="Net Present Value Outflows" id="NetPresentValueOutflows" oninput="$isValidFloat('#NetPresentValueOutflows')" /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>Return On Equity = <output for="NetPresentValueInflows NetPresentValueOutflows" id="result" /></p>
+    </form>
+</body>
+</html>
