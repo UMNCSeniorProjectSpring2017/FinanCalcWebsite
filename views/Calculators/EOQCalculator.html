@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>EOQ Calculator</title>
+    <script src="./javascripts/EOQCalculator.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <script src="./javascripts/validation.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Economic Ordering Quantity (EOQ)</h1>
+    <p>This equation is used to determine the best number of items to order at a time. $S$ is the total sales in units, $O$ is the ordering cost for each order, and $C$ is the carrying cost per unit</p>
+
+    <h3>Equation</h3>
+    \(EOQ = \sqrt\frac{2 &times; S &times; O}{C}\)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=S>Total Sales:</label><br />
+        <input type="text" placeholder="S" id="S" oninput="$isValidInteger('#S')" /><br />
+        <label for=O>Ordering Cost:</label><br />
+        <input type="text" placeholder="O" id="O" oninput="$isValidFloat('#O')" /><br />
+        <label for=C>Carrying Cost:</label><br />
+        <input type="text" placeholder="C" id="C" oninput="$isValidFloat('#C')" /><br /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>EOQ = <output for="S O C" id="result" /></p>
+    </form>
+</body>
+</html>

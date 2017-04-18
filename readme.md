@@ -3,55 +3,53 @@
 ## Equations
 
 Capital Management
-- [ ] Earnings per share (Justin Thomas)
-- [ ] Gross profit margin (Justin Thomas)
-- [ ] Operating profit (Justin Thomas)
-- [ ] Return on assets (Justin Thomas)
+- [x] Earnings per share (Justin Thomas)
+- [x] Gross profit margin (Justin Thomas)
+- [x] Operating profit (Justin Thomas)
+- [x] Return on assets (Justin Thomas)
 - [x] Return on equity (Mike Singh)
-- [ ] Du Pont Method (total asset turnover)
+- [x] Du Pont Method (total asset turnover) (Abraham Hosch)
 
 Capital Budgeting
-- [ ] Break-even point
-- [ ] Contribution margin
-- [ ] Total expected value of sales projections
+- [x] Break-even point (Abraham Hosch)
+- [x] Contribution margin (Abraham Hosch)
 - [x] Degree of Operating leverage (Abraham Hosch)
 - [x] Degree of financial leverage (Abraham Hosch)
 - [x] Degree of combined leverage (Abraham Hosch)
 - [x] Operating income (Abraham Hosch)
 
 Working Capital Management
-- [ ] Average collection period
-- [ ] Carrying cost per unit
-- [ ] Cost of not taking repayment discounts
-- [ ] Effective interest rate
+- [x] Average collection period (Abraham Hosch)
+- [x] Economic ordering quantity (Abraham Hosch)
+- [x] Cost of not taking repayment discounts (Cost of Missing Discount) (Abraham Hosch)
+- [x] Effective interest rate (Abraham Hosch)
 
 Capital budgeting
 - [x] Future value of money (single amount) (Abraham Hosch)
 - [x] Present value of money (single amount) (Abraham Hosch)
-- [ ] Future value of an annuity (Mark Becker)
-- [ ] Present value of an annuity (Mark Becker)
-- [ ] Price of a common stock today (Mark Becker)
-- [ ] Risk-free rate of return
-- [ ] Present value of a bonds interest payments
-- [ ] Present value of principal payment (par value) at maturity
+- [x] Future value of an annuity (Mark Becker)
+- [x] Present value of an annuity (Mark Becker)
+- [x] Price of a common stock today (Mark Becker)
+- [ ] Risk-free rate of return (Mark Becker)
+- [ ] Present value of a bonds interest payments (Mark Becker)
+- [ ] Present value of principal payment (par value) at maturity (Mark Becker)
 - [ ] Weighted average cost of capital
 - [ ] After tax cost of debt
 - [ ] Cost of preferred stock
-- [ ] Required rate of return of a common stock
-- [ ] Earnings before depreciation and taxes
-- [ ] Comparing two potential investments
-- [ ] Net present value of an investment
-- [ ] Expected values and standard deviations
+- [x] Required rate of return of a common stock (Justin Thomas)
+- [ ] Earnings before depreciation and taxes  (Justin Thomas)
+- [x] Payback Period (Justin Thomas)
+- [ ] Net present value of an investment  (Justin Thomas)
+- [ ] Expected values and standard deviations  (Justin Thomas)
 
 Long-Term financing
-- [ ] Dilution of stock value (Abraham Hosch)
-- [ ] Underwriting spread (Abraham Hosch)
+- [x] Dilution of stock value (Diluted EPS) (Abraham Hosch)
 
 PE ratio
-- [ ] Yield to maturity
-- [ ] Coupon rate
-- [ ] Residual claims to earnings
-- [ ] Value of one right to buy stock
+- [x] Yield to maturity (Mark Becker)
+- [x] Coupon rate (Mark Becker)
+- [x] Residual claims to earnings (Mark Becker)
+- [ ] Value of one right to buy stock (Tyler Oppegaard)
 - [x] Price-earnings ratio (Mike Singh)
-- [ ] Discount rate
-- [ ] Effects of the issuances of new stock shares on price
+- [ ] Discount rate (Tyler Oppegaard)
+- [ ] Effects of the issuances of new stock shares on price (Tyler Oppegaard)
