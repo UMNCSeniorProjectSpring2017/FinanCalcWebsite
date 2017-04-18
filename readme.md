@@ -35,11 +35,11 @@ Capital budgeting
 - [ ] Present value of principal payment (par value) at maturity (Mark Becker)
 - [ ] Weighted average cost of capital
 - [ ] After tax cost of debt
-- [ ] Cost of preferred stock
+- [x] Cost of preferred stock (Mike Singh)
 - [x] Required rate of return of a common stock (Justin Thomas)
 - [ ] Earnings before depreciation and taxes  (Justin Thomas)
 - [x] Payback Period (Justin Thomas)
-- [ ] Net present value of an investment  (Justin Thomas)
+- [x] Net present value of an investment  (Mike Singh)
 - [ ] Expected values and standard deviations  (Justin Thomas)
 
 Long-Term financing
