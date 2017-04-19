@@ -15,7 +15,7 @@ function $calculate() {
     var currentMarketRate = parseFloat($("#CurrentMarketRate")[0].value);
     var numberOfPeriods = parseFloat($("#NumberOfPeriods")[0].value);
 
-  var presentValueOfABondsInterestPayments = currentValue - (faceValue) / ( Math.pow(1 + currentMarketRate, numberOfPeriods)) ;
+    var presentValueOfABondsInterestPayments = currentValue - (faceValue) / ( Math.pow(1 + currentMarketRate, numberOfPeriods)) ;
     $("#result").html(presentValueOfABondsInterestPayments);
      
 
