@@ -140,9 +140,9 @@ exports.riskFreeRateOfReturnCalculator = function (req, res) {
 };
 
 exports.presentValueOfPrincipalPaymentAtMaturityCalculator = function (req, res) {
-    res.render('PresentValueOfPrincipalPaymentAtMaturityCalculator', { title: 'ejs' });
+    res.render('Calculators/PresentValueOfPrincipalPaymentAtMaturityCalculator', { title: 'ejs' });
 };
 
 exports.presentValueOfABondsInterestPaymentsCalculator = function (req, res) {
-    res.render('PresentValueOfABondsInterestPaymentsCalculator', { title: 'ejs' });
+    res.render('Calculators/PresentValueOfABondsInterestPaymentsCalculator', { title: 'ejs' });
 };
