@@ -59,6 +59,9 @@ app.get('/CouponRateCalculator', calculator.couponRateCalculator);
 app.get('/ResidualClaimsToEarningsCalculator', calculator.residualClaimsToEarningsCalculator);
 app.get('/NetPresentValueCalculator', calculator.netPresentValueCalculator);
 app.get('/CostOfPreferredStockCalculator', calculator.costOfPreferredStockCalculator);
+app.get('/RiskFreeRateOfReturnCalculator', calculator.riskFreeRateOfReturnCalculator);
+app.get('/PresentValueOfPrincipalPaymentAtMaturityCalculator', calculator.presentValueOfPrincipalPaymentAtMaturityCalculator);
+app.get('/PresentValueOfABondsInterestPaymentsCalculator', calculator.presentValueOfABondsInterestPaymentsCalculator);
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');

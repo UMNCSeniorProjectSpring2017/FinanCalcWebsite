@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title> Present Value of a Bonds Interest Payments</title>
+    <script src="./javascripts/PresentValueOfABondsInterestPaymentsCalculator.js"></script>
+    <script src="./public/javascripts/validation.js"></script>
+    <script src="./public/javascripts/jquery.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Present Value of a Bonds Interest Payments</h1>
+    <p>This equation is used to determine the present value of a donds interest payments.</p>
+
+    <h3>Equation</h3>
+    \(PV \ of\ Bonds \ Interest \ =\ C &minus; {\frac{F }{ (1 &plus; k) ^ n }} \)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=CurrentValue>Current Value :</label><br />
+        <input type="text" placeholder="C" id="CurrentValue" oninput="$isValidFloat('#CurrentValue')" /><br />
+        <label for=FaceValue>FaceValue :</label><br />
+        <input type="text" placeholder="F" id="FaceValue" oninput="$isValidFloat('#FaceValue')" /><br />
+        <label for=CurrentMarketRate .>Current Market Rate :</label><br />
+        <input type="text" placeholder="K" id="CurrentMarketRate" oninput="$isValidFloat('#CurrentMarketRate')" /><br />
+        <label for=NumberOfPeriods>Number of Periods :</label><br />
+        <input type="text" placeholder="n" id="NumberOfPeriods" oninput="$isValidFloat('#NumberOfPeriods')" /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>Present Value of a Bonds Interest Payments = <output for="CurrentValue FaceValue CurrentMarketRate NumberOfPeriods" id="result" /></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Present Value of Principal Payment at Maturity</title>
+    <script src="./javascripts/PresentValueOfPrincipalPaymentAtMaturityCalculator.js"></script>
+    <script src="./javascripts/validation.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Present Value of Principal Payment at Maturity</h1>
+    <p>This equation is used to determine the present value of principal payment at maturity.</p>
+
+    <h3>Equation</h3>
+    \(PV \ = \ C \ {\frac{ 1  &minus; ( 1 &plus; i) ^ { &minus; n } }{ i }} &plus; M \ ( 1 &plus; i) ^ { &minus; n }\)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=ContractualInterestRate>Contractual Interest Rate:</label><br />
+        <input type="text" placeholder="C" id="ContractualInterestRate" oninput="$isValidFloat('#ContractualInterestRate')" /><br />
+        <label for=MarketInterestRate>Market Interest Rate</label><br />
+        <input type="text" placeholder="i" id="MarketInterestRate" oninput="$isValidFloat('#MarketInterestRate')" /><br />
+        <label for=MarketPriceOfBond>Market Price Of Bond:</label><br />
+        <input type="text" placeholder="P" id="MarketPriceOfBond" oninput="$isValidFloat('#MarketPriceOfBond')" /><br />
+        <label for=NumberOfPayments>Number of Payments:</label><br />
+        <input type="text" placeholder="n" id="NumberOfPayments" oninput="$isValidFloat('#NumberOfPayments')" /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>Present Value of Principal Payment at Maturity = <output for="ContractualInterestRate MarketInterestRate MarketPriceOfBond NumberOfPayments" id="result" /></p>
+    </form>
+</body>
+</html>
