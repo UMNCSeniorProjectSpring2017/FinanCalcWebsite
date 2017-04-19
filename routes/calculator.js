@@ -134,3 +134,15 @@ exports.netPresentValueCalculator = function (req, res) {
 exports.costOfPreferredStockCalculator = function (req, res) {
     res.render('Calculators/CostOfPreferredStockCalculator', { title: 'ejs' });
 };
+
+exports.riskFreeRateOfReturnCalculator = function (req, res) {
+    res.render('Calculators/RiskFreeRateOfReturnCalculator', { title: 'ejs' });
+};
+
+exports.presentValueOfPrincipalPaymentAtMaturityCalculator = function (req, res) {
+    res.render('PresentValueOfPrincipalPaymentAtMaturityCalculator', { title: 'ejs' });
+};
+
+exports.presentValueOfABondsInterestPaymentsCalculator = function (req, res) {
+    res.render('PresentValueOfABondsInterestPaymentsCalculator', { title: 'ejs' });
+};
