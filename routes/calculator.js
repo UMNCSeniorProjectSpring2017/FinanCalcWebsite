@@ -102,3 +102,15 @@ exports.costOfMissingDiscountCalculator = function (req, res) {
 exports.EOQCalculator = function (req, res) {
     res.render('Calculators/EOQCalculator', { title: 'ejs' });
 };
+
+exports.RiskFreeRateOfReturnCalculator = function (req, res) {
+    res.render('Calculators/RiskFreeRateOfReturnCalculator', { title: 'ejs' });
+};
+
+exports.PresentValueOfPrincipalPaymentAtMaturityCalculator = function (req, res) {
+    res.render('PresentValueOfPrincipalPaymentAtMaturityCalculator', { title: 'ejs' });
+};
+
+exports.PresentValueOfABondsInterestPaymentsCalculator = function (req, res) {
+    res.render('PresentValueOfABondsInterestPaymentsCalculator', { title: 'ejs' });
+};
