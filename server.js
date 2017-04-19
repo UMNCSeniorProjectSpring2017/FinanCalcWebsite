@@ -48,6 +48,17 @@ app.get('/AverageCollectionPeriodCalculator', calculator.averageCollectionPeriod
 app.get('/EffectiveInterestRateCalculator', calculator.effectiveInterestRateCalculator);
 app.get('/CostOfMissingDiscountCalculator', calculator.costOfMissingDiscountCalculator);
 app.get('/EconomicOrderingQuantityCalculator', calculator.EOQCalculator);
+app.get('/PaybackPeriodCalculator', calculator.paybackPeriodCalculator);
+app.get('/EarningsPerShareCalculator', calculator.earningsPerShareCalculator);
+app.get('/GrossProfitMarginCalculator', calculator.grossProfitMarginCalculator);
+app.get('/OperatingProfitMarginCalculator', calculator.operatingProfitMarginCalculator);
+app.get('/ReturnOnAssetsCalculator', calculator.returnOnAssetsCalculator);
+app.get('/RequiredRateOfReturnCalculator', calculator.requiredRateOfReturnCalculator);
+app.get('/YieldToMaturityCalculator', calculator.yieldToMaturityCalculator);
+app.get('/CouponRateCalculator', calculator.couponRateCalculator);
+app.get('/ResidualClaimsToEarningsCalculator', calculator.residualClaimsToEarningsCalculator);
+app.get('/NetPresentValueCalculator', calculator.netPresentValueCalculator);
+app.get('/CostOfPreferredStockCalculator', calculator.costOfPreferredStockCalculator);
 app.get('/RiskFreeRateOfReturnCalculator', calculator.riskFreeRateOfReturnCalculator);
 app.get('/PresentValueOfPrincipalPaymentAtMaturityCalculator', calculator.presentValueOfPrincipalPaymentAtMaturityCalculator);
 app.get('/PresentValueOfABondsInterestPaymentsCalculator', calculator.presentValueOfABondsInterestPaymentsCalculator);
@@ -91,6 +102,10 @@ app.post("/LogUsage", function (req, res) {
         fs.appendFileSync('./log/Errors.log', err.message + "\r\n");
     }
 
+});
+
+app.get("/Search", function(req, res){
+    res.redirect("https://www.google.com/#q=site:financalc.azurewebsites.net+" + req.query.query);
 });
 
 http.createServer(app).listen(app.get('port'), function(){

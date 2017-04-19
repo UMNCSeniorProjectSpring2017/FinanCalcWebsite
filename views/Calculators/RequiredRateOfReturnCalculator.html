@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Price of a Common Stock Today</title>
+    <script src="./javascripts/RequiredRateOfReturnCalculator.js"></script>
+    <script src="./javascripts/validation.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Required Rate Of Return</h1>
+    <p>This equation is used to determine the Required Rate Of Return of a common stock</p>
+
+	  <h3>Equation</h3>
+    \(RR = G+{\frac{D}{P}} \)
+	<br/>
+	
+    <p>RR = Required Rate Of Return</p> 
+	<p>P = Price of the stock today</p> 
+	<p>D = Dividend at the end of the year</p> 
+	<p>G = Constant growth rate in dividends</p> 
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=Priceofthestocktoday>Price of the stock today:</label><br />
+        <input type="text" placeholder="P" id="Priceofthestocktoday" oninput="$isValidFloat('#Priceofthestocktoday')" /><br />
+        <label for=Dividend>Dividend at the end of the year:</label><br />
+        <input type="text" placeholder="D" id="Dividend" oninput="$isValidFloat('#Dividend')" /><br />
+        <label for=GrowthRate> Constant growth rate in dividends</label><br />
+        <input type="text" placeholder="ex 10%" id="GrowthRate" oninput="$isValidFloat('#GrowthRate')" /><br /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>Required Rate Of Return = <output for="Priceofthestocktoday Dividend GrowthRate" id="result" /></p>
+		<br/>
+		
+		<h3>Example</h3> 
+		<p>If:</p> 
+		<p>P = $40</p> 
+		<p>D = $3</p> 
+		<p>G = 3%</p> 
+		<p>Then the Required Rate Of Return would be 10.5%</p> 
+
+		
+		
+    </form>
+</body>
+</html>

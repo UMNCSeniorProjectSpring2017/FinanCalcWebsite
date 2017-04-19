@@ -67,27 +67,27 @@ exports.averageCollectionPeriodCalculator = function (req, res) {
     res.render('Calculators/AverageCollectionPeriodCalculator', { title: 'ejs' });
 };
 
-exports.breakEvenPoint = function (req, res) {
+exports.breakEvenPointCalculator = function (req, res) {
     res.render('Calculators/BreakEvenPointCalculator', { title: 'ejs' });
 };
 
-exports.contributionMargin = function (req, res) {
+exports.contributionMarginCalculator = function (req, res) {
     res.render('Calculators/ContributionMarginCalculator', { title: 'ejs' });
 };
 
-exports.dilutedEarningsPerShare = function (req, res) {
+exports.dilutedEarningsPerShareCalculator = function (req, res) {
     res.render('Calculators/DilutedEarningsPerShareCalculator', { title: 'ejs' });
 };
 
-exports.yieldToMaturity = function (req, res) {
+exports.yieldToMaturityCalculator = function (req, res) {
     res.render('Calculators/YieldToMaturityCalculator', { title: 'ejs' });
 };
 
-exports.couponRate = function (req, res) {
+exports.couponRateCalculator = function (req, res) {
     res.render('Calculators/CouponRateCalculator', { title: 'ejs' });
 };
 
-exports.residualClaimsToEarnings = function (req, res) {
+exports.residualClaimsToEarningsCalculator = function (req, res) {
     res.render('Calculators/ResidualClaimsToEarningsCalculator', { title: 'ejs' });
 };
 
@@ -103,14 +103,46 @@ exports.EOQCalculator = function (req, res) {
     res.render('Calculators/EOQCalculator', { title: 'ejs' });
 };
 
-exports.RiskFreeRateOfReturnCalculator = function (req, res) {
+exports.paybackPeriodCalculator = function (req, res) {
+    res.render('Calculators/PaybackPeriodCalculator', { title: 'ejs' });
+};
+
+exports.earningsPerShareCalculator = function (req, res) {
+    res.render('Calculators/EarningsPerShareCalculator', { title: 'ejs' });
+};
+
+exports.grossProfitMarginCalculator = function (req, res) {
+    res.render('Calculators/GrossProfitMarginCalculator', { title: 'ejs' });
+};
+
+exports.operatingProfitMarginCalculator = function (req, res) {
+    res.render('Calculators/OperatingProfitMarginCalculator', { title: 'ejs' });
+};
+
+exports.returnOnAssetsCalculator = function (req, res) {
+    res.render('Calculators/ReturnOnAssetsCalculator', { title: 'ejs' });
+};
+
+exports.requiredRateOfReturnCalculator = function (req, res) {
+    res.render('Calculators/RequiredRateOfReturnCalculator', { title: 'ejs' });
+};
+
+exports.netPresentValueCalculator = function (req, res) {
+    res.render('Calculators/NetPresentValueCalculator', { title: 'ejs' });
+};
+
+exports.costOfPreferredStockCalculator = function (req, res) {
+    res.render('Calculators/CostOfPreferredStockCalculator', { title: 'ejs' });
+};
+
+exports.riskFreeRateOfReturnCalculator = function (req, res) {
     res.render('Calculators/RiskFreeRateOfReturnCalculator', { title: 'ejs' });
 };
 
-exports.PresentValueOfPrincipalPaymentAtMaturityCalculator = function (req, res) {
+exports.presentValueOfPrincipalPaymentAtMaturityCalculator = function (req, res) {
     res.render('PresentValueOfPrincipalPaymentAtMaturityCalculator', { title: 'ejs' });
 };
 
-exports.PresentValueOfABondsInterestPaymentsCalculator = function (req, res) {
+exports.presentValueOfABondsInterestPaymentsCalculator = function (req, res) {
     res.render('PresentValueOfABondsInterestPaymentsCalculator', { title: 'ejs' });
 };
