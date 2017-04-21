@@ -1,5 +1,9 @@
 "use strict";
 
+function isPercent(str) {
+    return isFloat(str) && parseFloat(str) >= 0 && parseFloat(str) <= 1;
+}
+
 function isFloat(str) {
     for (var i in str) {
         var chr = str[i]

@@ -34,7 +34,7 @@ Capital budgeting
 - [x] Present value of a bonds interest payments (Mark Becker)
 - [x] Present value of principal payment (par value) at maturity (Mark Becker)
 - [ ] Weighted average cost of capital
-- [ ] After tax cost of debt
+- [x] After tax cost of debt (Abraham Hosch)
 - [x] Cost of preferred stock (Mike Singh)
 - [x] Required rate of return of a common stock (Justin Thomas)
 - [ ] Earnings before depreciation and taxes  (Justin Thomas)
