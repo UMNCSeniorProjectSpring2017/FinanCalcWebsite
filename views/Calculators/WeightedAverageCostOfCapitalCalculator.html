@@ -48,7 +48,7 @@
         <input type="text" placeholder="Cost of Debt" id="CostOfDebt" oninput="$isValidFloat('#CostOfDebt')" /><br />
         <label for=TaxRate>Tax Rate:</label><br />
         <input type="text" placeholder="Tax Rate" id="TaxRate" oninput="$isValidPercent('#TaxRate')" /><br />
-        <label for=WeightOfDebt>Tax Rate:</label><br />
+        <label for=WeightOfDebt>Weight of Debt:</label><br />
         <input type="text" placeholder="Weight of Debt" id="WeightOfDebt" oninput="$isValidPercent('#WeightOfDebt')" /><br />
         <input type="button" value="Calculate" onclick="$calculate()" />
         <p>WACC = <output for="CostOfEquity WeightOfEquity CostOfDebt TaxRate WeightOfDebt" id="result" /></p>
