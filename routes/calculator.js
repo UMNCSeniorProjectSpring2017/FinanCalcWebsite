@@ -135,16 +135,16 @@ exports.costOfPreferredStockCalculator = function (req, res) {
     res.render('Calculators/CostOfPreferredStockCalculator', { title: 'ejs' });
 };
 
-exports.riskFreeRateOfReturnCalculator = function (req, res) {
-    res.render('Calculators/RiskFreeRateOfReturnCalculator', { title: 'ejs' });
-};
-
 exports.presentValueOfPrincipalPaymentAtMaturityCalculator = function (req, res) {
     res.render('Calculators/PresentValueOfPrincipalPaymentAtMaturityCalculator', { title: 'ejs' });
 };
 
 exports.presentValueOfABondsInterestPaymentsCalculator = function (req, res) {
     res.render('Calculators/PresentValueOfABondsInterestPaymentsCalculator', { title: 'ejs' });
+};
+
+exports.riskFreeRateOfReturnCalculator = function (req, res) {
+    res.render('Calculators/RiskFreeRateOfReturnCalculator', { title: 'ejs' });
 };
 
 exports.afterTaxCostOfDebtCalculator = function (req, res) {
