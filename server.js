@@ -63,6 +63,7 @@ app.get('/RiskFreeRateOfReturnCalculator', calculator.riskFreeRateOfReturnCalcul
 app.get('/PresentValueOfPrincipalPaymentAtMaturityCalculator', calculator.presentValueOfPrincipalPaymentAtMaturityCalculator);
 app.get('/PresentValueOfABondsInterestPaymentsCalculator', calculator.presentValueOfABondsInterestPaymentsCalculator);
 app.get('/AfterTaxCostOfDebtCalculator', calculator.afterTaxCostOfDebtCalculator);
+app.get('/WeightedAverageCostOfCapitalCalculator', calculator.WACCCalculator);
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');

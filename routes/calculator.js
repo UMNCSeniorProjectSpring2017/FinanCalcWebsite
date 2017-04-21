@@ -150,3 +150,7 @@ exports.riskFreeRateOfReturnCalculator = function (req, res) {
 exports.afterTaxCostOfDebtCalculator = function (req, res) {
     res.render('Calculators/AfterTaxCostOfDebtCalculator', { title: 'ejs' });
 };
+
+exports.WACCCalculator = function (req, res) {
+    res.render('Calculators/WeightedAverageCostOfCapitalCalculator', { title: 'ejs' });
+};

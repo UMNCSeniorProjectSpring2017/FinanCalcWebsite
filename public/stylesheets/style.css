@@ -63,3 +63,8 @@ footer {
   background: #eee;
   border-top: 2px solid #ddd;
 }
+
+td, th {
+  text-align: left;
+  padding-right: 10px;
+}
