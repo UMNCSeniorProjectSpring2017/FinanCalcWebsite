@@ -25,7 +25,7 @@
         <label for=CostOfDebt>Cost of Debt:</label><br />
         <input type="text" placeholder="Cost of Debt" id="CostOfDebt" oninput="$isValidFloat('#CostOfDebt')" /><br />
         <label for=TaxRate>Tax Rate:</label><br />
-        <input type="text" placeholder="TaxRate" id="TaxRate" oninput="$isValidPercent('#TaxRate')" /><br />
+        <input type="text" placeholder="Tax Rate" id="TaxRate" oninput="$isValidPercent('#TaxRate')" /><br />
         <input type="button" value="Calculate" onclick="$calculate()" />
         <p>Break-Even Point = <output for="CostOfDebt TaxRate" id="result" /></p>
     </form>
