@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Earninigs Before Depreciation And Taxes</title>
-    <script src="./public/javascripts/EarninigsBeforeDepreciationAndTaxesCalculator.js"></script>
+    <title>Earnings Before Depreciation And Taxes</title>
+    <script src="./public/javascripts/EarningsBeforeDepreciationAndTaxesCalculator.js"></script>
     <script src="./public/javascripts/jquery.js"></script>
     <script src="./public/javascripts/validation.js"></script>
     <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
@@ -14,11 +14,11 @@
     </script>
 </head>
 <body>
-    <h1>Earninigs Before Depreciation And Taxes </h1>
-    <p>This equation is used to calcuate earninigs before depreciation and taxes.</p>
+    <h1>Earnings Before Depreciation And Taxes </h1>
+    <p>This equation is used to calcuate earnings before depreciation and taxes.</p>
 
     <h3>Equation</h3>
-	<p>Earninigs Before Depreciation And Taxes = Sales Revenue - Salaries - Rent and Utilities - Interest Expense - Other Expenses </p>
+		<p>Earnings Before Depreciation And Taxes = Sales Revenue - Salaries - Rent and Utilities - Interest Expense - Other Expenses </p>
    
 
     <h3>Calculator</h3>
@@ -26,22 +26,22 @@
         <label for=salesRevenue>Sales Revenue:</label><br />
         <input type="text" placeholder="Net Earnings" id="salesRevenue" oninput="$isValidFloat('#salesRevenue')" /><br />
 		
-        <label for=salaries>Salaries:</label><br />		
+			<label for=salaries>Salaries:</label><br />		
         <input type="text" placeholder="salaries" id="salaries" oninput="$isValidFloat('#salaries')" /><br />
 		
-		<label for=RateOfReturn>Rent and Utilities:</label><br />		
+			<label for=RateOfReturn>Rent and Utilities:</label><br />		
         <input type="text" placeholder="Rent and Utilities" id="rentAndUtil" oninput="$isValidFloat('#rentAndUtil')" /><br />
 							
-		<label for=interestEx>Interest Expense:</label><br />		
+			<label for=interestEx>Interest Expense:</label><br />		
         <input type="text" placeholder="Interest Expense" id="interestEx" oninput="$isValidFloat('#interestEx')" /><br />
 		
-		<label for=otherEx>Other Expenses:</label><br />		
+			<label for=otherEx>Other Expenses:</label><br />		
         <input type="text" placeholder="Other Expenses" id="otherEx" oninput="$isValidFloat('#otherEx')" /><br />
 		
         <input type="button" value="Calculate" onclick="$calculate()" />
 		
 		
-        <p>Earninigs Before Depreciation And Taxes = <output for="NetEarnings interestEx" id="result" /></p>
+        <p>Earnings Before Depreciation And Taxes = <output for="NetEarnings interestEx" id="result" /></p>
     </form>
 </body>
 </html>

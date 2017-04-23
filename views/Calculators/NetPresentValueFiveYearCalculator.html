@@ -22,29 +22,21 @@
 
     <h3>Calculator</h3>
     <form>
-        <label for=initialIvestment>Initial Investment:</label><br />
-        <input type="text" placeholder="C" id="initialIvestment" oninput="$isValidFloat('#initialIvestment')" /><br />
-        
-		<label for=discountRate>Discount Rate:</label><br />
-		<input type="text" placeholder="discountRate" id="discountRate" oninput="$isValidFloat('#discountRate')" /><br />
-       
-	   <label for=firstYear>Income Generated During The First Year:</label><br />
+       <label for=initialIvestment>Initial Investment:</label><br />
+       <input type="text" placeholder="C" id="initialIvestment" oninput="$isValidFloat('#initialIvestment')" /><br />
+       <label for=discountRate>Discount Rate:</label><br />
+	   <input type="text" placeholder="discountRate" id="discountRate" oninput="$isValidFloat('#discountRate')" /><br />
+       <label for=firstYear>Income Generated During The First Year:</label><br />
 	   <input type="text" placeholder="Yr1CashFlow" id="firstYear" oninput="$isValidFloat('#firstYear')" /><br />
-	   
 	   <label for=secondYear>Income Generated During The Second Year:</label><br />
 	   <input type="text" placeholder="Yr2CashFlow" id="secondYear" oninput="$isValidFloat('#secondYear')" /><br />
-	   
 	   <label for=thirdYear>Income Generated During The Third Year:</label><br />
 	   <input type="text" placeholder="Yr3CashFlow" id="thirdYear" oninput="$isValidFloat('#thirdYear')" /><br />
-	   
 	   <label for=fourthYear>Income Generated During The Fourth Year:</label><br />
 	   <input type="text" placeholder="Yr4CashFlow" id="fourthYear" oninput="$isValidFloat('#fourthYear')" /><br />
-	   
 	   <label for=fifthYear>Income Generated During The Fifth Year:</label><br />
 	   <input type="text" placeholder="Yr5CashFlow" id="fifthYear" oninput="$isValidFloat('#fifthYear')" /><br />
-      
-	    
-        <input type="button" value="Calculate" onclick="$calculate()" />
+       <input type="button" value="Calculate" onclick="$calculate()" />
         <p>Net  Present  Value = <output for="initialIvestment discountRate firstYear secondYear thirdYear fourthYear fifthYear" id="result" /></p>
     </form>
 </body>

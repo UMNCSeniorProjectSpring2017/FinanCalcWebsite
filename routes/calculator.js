@@ -134,3 +134,11 @@ exports.netPresentValueCalculator = function (req, res) {
 exports.costOfPreferredStockCalculator = function (req, res) {
     res.render('Calculators/CostOfPreferredStockCalculator', { title: 'ejs' });
 };
+
+exports.earninigsBeforeDepreciationAndTaxesCalculator = function (req, res) {
+    res.render('Calculators/EarninigsBeforeDepreciationAndTaxes', { title: 'ejs' });
+};
+
+exports.netPresentValueFiveYearCalculator = function (req, res) {
+    res.render('Calculators/NetPresentValueFiveYear', { title: 'ejs' });
+};

@@ -7,7 +7,7 @@ function $calculate() {
 		!isFloat($("#secondYear")[0].value) ||
 		!isFloat($("#thirdYear")[0].value) ||
 		!isFloat($("#fourthYear")[0].value) ||
-        !isFloat($("#fifthYear")[0].value)) {
+		!isFloat($("#fifthYear")[0].value)) {
 
         $("#result").html("Bad argument(s)");
         return;
@@ -15,9 +15,9 @@ function $calculate() {
 
     
 	
-	var initialIvestment = parseFloat($("#initialIvestment")[0].value);
+		var initialIvestment = parseFloat($("#initialIvestment")[0].value);
     var discountRate = parseFloat($("#discountRate")[0].value);
-		var adjDiscountRate = (discountRate * .01) +1;
+			var adjDiscountRate = (discountRate * .01) +1;
 	
 	
     var firstYear = parseFloat($("#firstYear")[0].value);
@@ -35,8 +35,8 @@ function $calculate() {
 	var fifthYear = parseFloat($("#fifthYear")[0].value);
 		var fifthYearValue = (fifthYear / Math.pow(adjDiscountRate, 5));
 
-	var netPresentValue = firstYearValue + secondYearValue + thirdYearValue +  fourthYearValue + fifthYearValue - initialIvestment;
-    //var netPresentValue = fifthYearValue
+		var netPresentValue = firstYearValue + secondYearValue + thirdYearValue +  fourthYearValue + fifthYearValue - initialIvestment;
+    
 	
 	$("#result").html(netPresentValue);
  
