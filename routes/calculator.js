@@ -159,15 +159,13 @@ exports.dilutionPerShareCalculator = function (req, res) {
     res.render('Calculators/DilutionPerShareCalculator', { title: 'ejs' });
 };
 
-<<<<<<< HEAD
 exports.discountRateCalculator = function (req, res) {
     res.render('Calculators/DiscountRateCalculator', { title: 'ejs' });
-=======
+
 exports.earningsBeforeDepreciationAndTaxesCalculator = function (req, res) {
     res.render('Calculators/EarningsBeforeDepreciationAndTaxesCalculator', { title: 'ejs' });
 };
 
 exports.netPresentValueFiveYearCalculator = function (req, res) {
     res.render('Calculators/NetPresentValueFiveYearCalculator', { title: 'ejs' });
->>>>>>> f61564bb031241d0166855a5fade479c54345947
 };
