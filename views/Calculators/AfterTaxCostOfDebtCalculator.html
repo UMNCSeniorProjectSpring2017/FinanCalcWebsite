@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>After-Tax Cost of Debt Calculator</title>
+    <script src="./javascripts/AfterTaxCostOfDebtCalculator.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <script src="./javascripts/validation.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>After-Tax Cost of Debt</h1>
+    <p>This equation calculates the after-tax cost of debt using the cost of debt before taxes and the tax rate.</p>
+
+    <h3>Equation</h3>
+    \(After-Tax\ Cost\ of\ Debt = Cost\ of\ Debt &times; (1 &minus; Tax\ Rate)\)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=CostOfDebt>Cost of Debt:</label><br />
+        <input type="text" placeholder="Cost of Debt" id="CostOfDebt" oninput="$isValidFloat('#CostOfDebt')" /><br />
+        <label for=TaxRate>Tax Rate:</label><br />
+        <input type="text" placeholder="Tax Rate" id="TaxRate" oninput="$isValidPercent('#TaxRate')" /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>After-Tax Cost of Debt = <output for="CostOfDebt TaxRate" id="result" /></p>
+    </form>
+</body>
+</html>

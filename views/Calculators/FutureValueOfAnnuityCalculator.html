@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Present Value Calculator</title>
-    <script src="./javascripts/PresentValueCalculator.js"></script>
+    <title>Future Value of Annuity Calculator</title>
+    <script src="./javascripts/FutureValueOfAnnuityCalculator.js"></script>
     <script src="./javascripts/validation.js"></script>
     <script src="./javascripts/jquery.js"></script>
     <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
@@ -14,22 +14,22 @@
     </script>
 </head>
 <body>
-    <h1>Present Value</h1>
-    <p>This equation is used to determine the present value of money given a future cash flow, the rate of return, and the number of periods.</p>
+    <h1>Future Value of Annuity</h1>
+    <p>This equation is used to determine the future value of an annuity.</p>
 
     <h3>Equation</h3>
-    \(PV = {\frac{FV}{(1 &plus; i )^n}}\)
+    \(FV \ of \ Annuity = P\Big[{\frac{(1 &plus; r)^n &minus; 1}{r}}\Big] \)
 
     <h3>Calculator</h3>
     <form>
-        <label for=CashFlow>Cash flow at period n:</label><br />
-        <input type="text" placeholder="FV" id="CashFlow" oninput="$isValidFloat('#CashFlow')" /><br />
+        <label for=CashFlow>Periodic Payment:</label><br />
+        <input type="text" placeholder="P" id="PeriodicPayment" oninput="$isValidFloat('#PeriodicPayment')" /><br />
         <label for=RateOfReturn>Rate of return:</label><br />
         <input type="text" placeholder="r" id="RateOfReturn" oninput="$isValidFloat('#RateOfReturn')" /><br />
         <label for=Periods>Number of periods:</label><br />
         <input type="text" placeholder="n" id="Periods" oninput="$isValidFloat('#Periods')" /><br /><br />
         <input type="button" value="Calculate" onclick="$calculate()" />
-        <p>Present Value = <output for="CashFlow RateOfReturn Periods" id="result" /></p>
+        <p>Future Value of Annuity = <output for="PeriodicPayment RateOfReturn Periods" id="result" /></p>
     </form>
 </body>
 </html>

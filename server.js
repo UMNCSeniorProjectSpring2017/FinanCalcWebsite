@@ -37,6 +37,33 @@ app.get('/DFLCalculator', calculator.DFLCalculator);
 app.get('/DCLCalculator', calculator.DCLCalculator);
 app.get('/OperatingIncomeCalculator', calculator.operatingIncomeCalculator);
 app.get('/ReturnOnEquityCalculator', calculator.ROECalculator);
+app.get('/FutureValueOfAnnuityCalculator', calculator.futureValueOfAnnuityCalculator);
+app.get('/PresentValueOfAnnuityCalculator', calculator.presentValueOfAnnuityCalculator);
+app.get('/PriceOfACommonStockTodayCalculator', calculator.priceOfACommonStockTodayCalculator);
+app.get('/BreakEvenPointCalculator', calculator.breakEvenPointCalculator);
+app.get('/ContributionMarginCalculator', calculator.contributionMarginCalculator);
+app.get('/DilutedEarningsPerShareCalculator', calculator.dilutedEarningsPerShareCalculator);
+app.get('/DuPontMethodCalculator', calculator.duPontMethodCalculator);
+app.get('/AverageCollectionPeriodCalculator', calculator.averageCollectionPeriodCalculator);
+app.get('/EffectiveInterestRateCalculator', calculator.effectiveInterestRateCalculator);
+app.get('/CostOfMissingDiscountCalculator', calculator.costOfMissingDiscountCalculator);
+app.get('/EconomicOrderingQuantityCalculator', calculator.EOQCalculator);
+app.get('/PaybackPeriodCalculator', calculator.paybackPeriodCalculator);
+app.get('/EarningsPerShareCalculator', calculator.earningsPerShareCalculator);
+app.get('/GrossProfitMarginCalculator', calculator.grossProfitMarginCalculator);
+app.get('/OperatingProfitMarginCalculator', calculator.operatingProfitMarginCalculator);
+app.get('/ReturnOnAssetsCalculator', calculator.returnOnAssetsCalculator);
+app.get('/RequiredRateOfReturnCalculator', calculator.requiredRateOfReturnCalculator);
+app.get('/YieldToMaturityCalculator', calculator.yieldToMaturityCalculator);
+app.get('/CouponRateCalculator', calculator.couponRateCalculator);
+app.get('/ResidualClaimsToEarningsCalculator', calculator.residualClaimsToEarningsCalculator);
+app.get('/NetPresentValueCalculator', calculator.netPresentValueCalculator);
+app.get('/CostOfPreferredStockCalculator', calculator.costOfPreferredStockCalculator);
+app.get('/RiskFreeRateOfReturnCalculator', calculator.riskFreeRateOfReturnCalculator);
+app.get('/PresentValueOfPrincipalPaymentAtMaturityCalculator', calculator.presentValueOfPrincipalPaymentAtMaturityCalculator);
+app.get('/PresentValueOfABondsInterestPaymentsCalculator', calculator.presentValueOfABondsInterestPaymentsCalculator);
+app.get('/AfterTaxCostOfDebtCalculator', calculator.afterTaxCostOfDebtCalculator);
+app.get('/WeightedAverageCostOfCapitalCalculator', calculator.WACCCalculator);
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');
@@ -76,7 +103,10 @@ app.post("/LogUsage", function (req, res) {
     catch (err) {
         fs.appendFileSync('./log/Errors.log', err.message + "\r\n");
     }
+});
 
+app.get("/Search", function(req, res){
+    res.redirect("https://www.google.com/#q=site:financalc.azurewebsites.net+" + req.query.query);
 });
 
 http.createServer(app).listen(app.get('port'), function(){

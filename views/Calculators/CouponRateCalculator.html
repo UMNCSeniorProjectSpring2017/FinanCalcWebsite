@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Coupon Rate Calculator</title>
+    <script src="./javascripts/CouponRateCalculator.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <script src="./javascripts/validation.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Coupon Rate</h1>
+    <p>This equation is used to determine coupon rate.</p>
+
+    <h3>Equation</h3>
+    \(Coupon \ Rate ={\frac{Annualized \ Intrest}{Par \ Value}} \)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=AnnualizedIntrest>Annualized Intrest:</label><br />
+        <input type="text" placeholder="AI" id="AnnualizedIntrest" oninput="$isValidFloat('#AnnualizedIntrest')" /><br />
+        <label for=ParValue>Par Value:</label><br />
+        <input type="text" placeholder="PV" id="ParValue" oninput="$isValidFloat('#ParValue')" /><br /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>Coupon Rate = <output for="AnnualizedIntrest ParValue" id="result" /></p>
+    </form>
+</body>
+</html>

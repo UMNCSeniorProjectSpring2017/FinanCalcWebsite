@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Price of a Common Stock Today</title>
+    <script src="./javascripts/PriceOfACommonStockTodayCalculator.js"></script>
+    <script src="./javascripts/validation.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Price of a Common Stock Today</h1>
+    <p>This equation is used to determine the price of a Common Stock today.</p>
+
+    <h3>Equation</h3>
+    \(Value = {\frac{Stock's \ next \ annual \ dividend }{Required \ return - Dividend \ growth rate  }} \)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=StocksNextAnnualDividend>Stock's next annual dividend:</label><br />
+        <input type="text" placeholder="D" id="StocksNextAnnualDividend" oninput="$isValidFloat('#StocksNextAnnualDividend')" /><br />
+        <label for=RequiredReturn>Required return:</label><br />
+        <input type="text" placeholder="R" id="RequiredReturn" oninput="$isValidFloat('#RequiredReturn')" /><br />
+        <label for=DividendGrowth>Dividend growth:</label><br />
+        <input type="text" placeholder="G" id="DividendGrowth" oninput="$isValidFloat('#DividendGrowth')" /><br /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>Value = <output for="StocksNextAnnualDividend RequiredReturn DividendGrowth" id="result" /></p>
+    </form>
+</body>
+</html>

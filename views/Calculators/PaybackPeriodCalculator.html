@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Future Value Calculator</title>
+    <script src="./javascripts/PaybackPeriodCalculator.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <script src="./javascripts/validation.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Payback Period</h1>
+    <p>Under the payback method we can compute the time required to recoup the initial investment. Investments with lower payback periods are more profitable.</p>  
+	<p>---Pros and Cons---</p>   
+    <p>+ It can be a measure of risk inherent in a project.</p>
+	<p>+ For companies facing liquidity problems, it provides a good ranking of projects that would return money early</p>
+	<p>- The payback period does not take into account the time value of money</p>
+	<p>- It does not take into account, the cash flows that occur after the payback period.</p>
+	
+    <h3>Equation</h3>
+    \(PaybackPeriod = A+{\frac{B}{C}} \)
+	
+	<p>A = The last period with a negative cumulative cash flow</p> 
+	<p>B = The absolute value of cumulative cash flow at the end of the period A</p> 
+	<p>C = The total cash flow during the period after A</p> 
+
+	<h3>Example</h3>
+	
+	<img src="./images/example001.png">
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=AAA>The last period with a negative cumulative cash flow:</label><br />
+        <input type="text" placeholder="A" id="AAA" oninput="$isValidFloat('#AAA')" /><br />
+		
+        <label for=BBB>The absolute value of cumulative cash flow at the end of the period A:</label><br />
+        <input type="text" placeholder="B" id="BBB" oninput="$isValidFloat('#BBB')" /><br />
+		
+       	<label for=CCC>The total cash flow during the period after A:</label><br />
+        <input type="text" placeholder="C" id="CCC" oninput="$isValidFloat('#CCC')" /><br />
+		
+        <input type="button" value="Calculate" onclick="$calculate()" />
+		
+        <p>Payback Period % = <output for="AAA BBB CCC " id="result" /></p>
+    </form>
+</body>
+</html>
