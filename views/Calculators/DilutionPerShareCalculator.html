@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dilution Per Share Calculator</title>
+    <script src="./javascripts/DilutionPerShareCalculator.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <script src="./javascripts/validation.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Dilution Per Share</h1>
+    <p>Net Income = (I)<br />
+       Preferred Dividends = (D)<br />
+       Weighted Average number of shares outstanding = (S)<br />
+       impact of convertible securities = (C)<br />
+       impact of options, warrants and other dilutive securities = (O)</p>
+
+    <h3>Equation</h3>
+    \(Dilution\ per\ Share = \frac{I &minus; D}{S &plus; C &minus; O}\)
+    
+    <h3>Calculator</h3>
+    <form>
+        <label for=NetIncome>Net Income:</label><br />
+        <input type="text" placeholder="I" id="NetIncome" oninput="$isValidFloat('#NetIncome')" /><br />
+        <label for=PreferredDividends>Preferred Dividends:</label><br />
+        <input type="text" placeholder="D" id="PreferredDividends" oninput="$isValidFloat('#PreferredDividends')" /><br />
+        <label for=WANSO>Weighted Average Number of Shares Outstanding:</label><br />
+        <input type="text" placeholder="S" id="WANSO" oninput="$isValidFloat('#WANSO')" /><br />
+        <label for=ICS>Impact of Convertible Securities:</label><br />
+        <input type="text" placeholder="C" id="ICS" oninput="$isValidFloat('#ICS')" /><br />
+        <label for=IODS>Weighted Average Number of Shares Outstanding:</label><br />
+        <input type="text" placeholder="O" id="IODS" oninput="$isValidFloat('#IODS')" /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>Dilution Per Share = <output for="NetIncome PreferredDividends WANSO ICS IODS" id="result" /></p>
+    </form>
+</body>
+</html>

@@ -154,3 +154,7 @@ exports.afterTaxCostOfDebtCalculator = function (req, res) {
 exports.WACCCalculator = function (req, res) {
     res.render('Calculators/WeightedAverageCostOfCapitalCalculator', { title: 'ejs' });
 };
+
+exports.dilutionPerShareCalculator = function (req, res) {
+    res.render('Calculators/DilutionPerShareCalculator', { title: 'ejs' });
+};

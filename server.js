@@ -64,6 +64,7 @@ app.get('/PresentValueOfPrincipalPaymentAtMaturityCalculator', calculator.presen
 app.get('/PresentValueOfABondsInterestPaymentsCalculator', calculator.presentValueOfABondsInterestPaymentsCalculator);
 app.get('/AfterTaxCostOfDebtCalculator', calculator.afterTaxCostOfDebtCalculator);
 app.get('/WeightedAverageCostOfCapitalCalculator', calculator.WACCCalculator);
+app.get('/DilutionPerShareCalculator', calculator.dilutionPerShareCalculator);
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');
