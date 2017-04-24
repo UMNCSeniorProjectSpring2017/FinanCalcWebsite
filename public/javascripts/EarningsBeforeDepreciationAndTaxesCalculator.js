@@ -20,5 +20,5 @@ function $calculate() {
     var returnOnEquity = salesRevenue - salaries - rentAndUtil - otherEx - interestEx;
     $("#result").html(returnOnEquity);
     
-    recordUsage("EarninigsBeforeDepreciationAndTaxesCalculator")
+    recordUsage("EarningsBeforeDepreciationAndTaxesCalculator")
 }
