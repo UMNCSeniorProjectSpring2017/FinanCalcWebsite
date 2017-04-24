@@ -52,4 +52,4 @@ PE ratio
 - [ ] Value of one right to buy stock (Tyler Oppegaard)
 - [x] Price-earnings ratio (Mike Singh)
 - [ ] Discount rate (Tyler Oppegaard)
-- [ ] Stock Dilution (Tyler Oppegaard)
+- [x] Stock Dilution (Tyler Oppegaard)
