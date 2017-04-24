@@ -12,8 +12,6 @@ function $calculate() {
         $("#result").html("Bad argument(s)");
         return;
     }
-
-    
 	
     var initialIvestment = parseFloat($("#initialIvestment")[0].value);
     var discountRate = parseFloat($("#discountRate")[0].value);
