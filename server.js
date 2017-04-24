@@ -54,6 +54,8 @@ app.get('/GrossProfitMarginCalculator', calculator.grossProfitMarginCalculator);
 app.get('/OperatingProfitMarginCalculator', calculator.operatingProfitMarginCalculator);
 app.get('/ReturnOnAssetsCalculator', calculator.returnOnAssetsCalculator);
 app.get('/RequiredRateOfReturnCalculator', calculator.requiredRateOfReturnCalculator);
+app.get('/EarningsBeforeDepreciationAndTaxesCalculator', calculator.earninigsBeforeDepreciationAndTaxesCalculator);
+app.get('/NetPresentValueFiveYearCalculator', calculator.netPresentValueFiveYearCalculator);
 app.get('/YieldToMaturityCalculator', calculator.yieldToMaturityCalculator);
 app.get('/CouponRateCalculator', calculator.couponRateCalculator);
 app.get('/ResidualClaimsToEarningsCalculator', calculator.residualClaimsToEarningsCalculator);

@@ -158,3 +158,11 @@ exports.WACCCalculator = function (req, res) {
 exports.dilutionPerShareCalculator = function (req, res) {
     res.render('Calculators/DilutionPerShareCalculator', { title: 'ejs' });
 };
+
+exports.earningsBeforeDepreciationAndTaxesCalculator = function (req, res) {
+    res.render('Calculators/EarningsBeforeDepreciationAndTaxesCalculator', { title: 'ejs' });
+};
+
+exports.netPresentValueFiveYearCalculator = function (req, res) {
+    res.render('Calculators/NetPresentValueFiveYearCalculator', { title: 'ejs' });
+};

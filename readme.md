@@ -37,8 +37,9 @@ Capital budgeting
 - [x] After tax cost of debt (Abraham Hosch)
 - [x] Cost of preferred stock (Mike Singh)
 - [x] Required rate of return of a common stock (Justin Thomas)
-- [ ] Earnings before depreciation and taxes  (Justin Thomas)
+- [x] Earnings before depreciation and taxes  (Justin Thomas)
 - [x] Payback Period (Justin Thomas)
+- [x] Net Present Value Five Year Calculator  (Justin Thomas)
 - [x] Net present value of an investment  (Mike Singh)
 - [ ] Expected values and standard deviations  (Justin Thomas)
 
