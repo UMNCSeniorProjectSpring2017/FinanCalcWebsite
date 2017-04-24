@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Value of a Right Calculator</title>
+    <script src="./javascripts/ValueOfARightCalculator.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <script src="./javascripts/validation.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Value of a Right</h1>
+    <p>This equation is used to determine the value of a subscription right.</p>
+
+    <h3>Equation</h3>
+    \(Value = \frac{Stock\ Price &minus; Rights\ Price\ per\ Share}{Number\ of\ Rights\ to\ Buy\ Share &plus; 1}\)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=StockPrice>Stock Price:</label><br />
+        <input type="text" placeholder="Price" id="StockPrice" oninput="$isValidFloat('#StockPrice')" /><br />
+        <label for=RightsPricePerShare>Rights Price per Share:</label><br />
+        <input type="text" placeholder="Price per Share" id="RightsPricePerShare" oninput="$isValidFloat('#RightsPricePerShare')" /><br />
+        <label for=NumberOfRightsToBuyShare>Number of Rights to Buy Share:</label><br />
+        <input type="text" placeholder="Quantity" id="NumberOfRightsToBuyShare" oninput="$isValidFloat('#NumberOfRightsToBuyShare')" /><br /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>Value of a Right = <output for="StockPrice RightsPricePerShare NumberOfRightsToBuyShare" id="result" /></p>
+    </form>
+</body>
+</html>
