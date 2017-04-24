@@ -170,3 +170,7 @@ exports.earningsBeforeDepreciationAndTaxesCalculator = function (req, res) {
 exports.netPresentValueFiveYearCalculator = function (req, res) {
     res.render('Calculators/NetPresentValueFiveYearCalculator', { title: 'ejs' });
 };
+
+exports.valueOfARightCalculator = function (req, res) {
+    res.render('Calculators/ValueOfARightCalculator', { title: 'ejs' });
+};

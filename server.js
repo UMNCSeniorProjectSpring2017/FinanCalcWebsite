@@ -68,6 +68,7 @@ app.get('/AfterTaxCostOfDebtCalculator', calculator.afterTaxCostOfDebtCalculator
 app.get('/WeightedAverageCostOfCapitalCalculator', calculator.WACCCalculator);
 app.get('/DilutionPerShareCalculator', calculator.dilutionPerShareCalculator);
 app.get('/DiscountRateCalculator', calculator.discountRateCalculator);
+app.get('/ValueOfARightCalculator', calculator.valueOfARightCalculator);
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');
