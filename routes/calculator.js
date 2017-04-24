@@ -158,3 +158,7 @@ exports.WACCCalculator = function (req, res) {
 exports.dilutionPerShareCalculator = function (req, res) {
     res.render('Calculators/DilutionPerShareCalculator', { title: 'ejs' });
 };
+
+exports.discountRateCalculator = function (req, res) {
+    res.render('Calculators/DiscountRateCalculator', { title: 'ejs' });
+};
