@@ -61,6 +61,12 @@ app.get('/CouponRateCalculator', calculator.couponRateCalculator);
 app.get('/ResidualClaimsToEarningsCalculator', calculator.residualClaimsToEarningsCalculator);
 app.get('/NetPresentValueCalculator', calculator.netPresentValueCalculator);
 app.get('/CostOfPreferredStockCalculator', calculator.costOfPreferredStockCalculator);
+app.get('/RiskFreeRateOfReturnCalculator', calculator.riskFreeRateOfReturnCalculator);
+app.get('/PresentValueOfPrincipalPaymentAtMaturityCalculator', calculator.presentValueOfPrincipalPaymentAtMaturityCalculator);
+app.get('/PresentValueOfABondsInterestPaymentsCalculator', calculator.presentValueOfABondsInterestPaymentsCalculator);
+app.get('/AfterTaxCostOfDebtCalculator', calculator.afterTaxCostOfDebtCalculator);
+app.get('/WeightedAverageCostOfCapitalCalculator', calculator.WACCCalculator);
+app.get('/DilutionPerShareCalculator', calculator.dilutionPerShareCalculator);
 
 app.post("/LogUsage", function (req, res) {
     var fs = require('fs');
@@ -100,7 +106,6 @@ app.post("/LogUsage", function (req, res) {
     catch (err) {
         fs.appendFileSync('./log/Errors.log', err.message + "\r\n");
     }
-
 });
 
 app.get("/Search", function(req, res){

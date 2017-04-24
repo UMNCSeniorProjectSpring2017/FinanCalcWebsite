@@ -135,10 +135,34 @@ exports.costOfPreferredStockCalculator = function (req, res) {
     res.render('Calculators/CostOfPreferredStockCalculator', { title: 'ejs' });
 };
 
+exports.presentValueOfPrincipalPaymentAtMaturityCalculator = function (req, res) {
+    res.render('Calculators/PresentValueOfPrincipalPaymentAtMaturityCalculator', { title: 'ejs' });
+};
+
+exports.presentValueOfABondsInterestPaymentsCalculator = function (req, res) {
+    res.render('Calculators/PresentValueOfABondsInterestPaymentsCalculator', { title: 'ejs' });
+};
+
+exports.riskFreeRateOfReturnCalculator = function (req, res) {
+    res.render('Calculators/RiskFreeRateOfReturnCalculator', { title: 'ejs' });
+};
+
+exports.afterTaxCostOfDebtCalculator = function (req, res) {
+    res.render('Calculators/AfterTaxCostOfDebtCalculator', { title: 'ejs' });
+};
+
+exports.WACCCalculator = function (req, res) {
+    res.render('Calculators/WeightedAverageCostOfCapitalCalculator', { title: 'ejs' });
+};
+
+exports.dilutionPerShareCalculator = function (req, res) {
+    res.render('Calculators/DilutionPerShareCalculator', { title: 'ejs' });
+};
+
 exports.earningsBeforeDepreciationAndTaxesCalculator = function (req, res) {
-    res.render('Calculators/EarningsBeforeDepreciationAndTaxes', { title: 'ejs' });
+    res.render('Calculators/EarningsBeforeDepreciationAndTaxesCalculator', { title: 'ejs' });
 };
 
 exports.netPresentValueFiveYearCalculator = function (req, res) {
-    res.render('Calculators/NetPresentValueFiveYear', { title: 'ejs' });
+    res.render('Calculators/NetPresentValueFiveYearCalculator', { title: 'ejs' });
 };

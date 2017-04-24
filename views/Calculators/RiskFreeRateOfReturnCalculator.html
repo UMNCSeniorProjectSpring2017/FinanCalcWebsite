@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Risk Free Rate of Return Calculator</title>
+    <script src="./javascripts/RiskFreeRateOfReturnCalculator.js"></script>
+    <script src="./javascripts/validation.js"></script>
+    <script src="./javascripts/jquery.js"></script>
+    <link rel="Stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+    <h1>Risk Free Rate of Return</h1>
+    <p>This equation is used to determine risk free rate of return.</p>
+
+    <h3>Equation</h3>
+    \(Risk \ Free \ Rate = {\frac{1 &plus; Nominal \ Risk \ Free \ Rate }{1 &plus; Inflation \ Rate}} &minus; 1 \)
+
+    <h3>Calculator</h3>
+    <form>
+        <label for=NominalRiskFreeRate>Nominal RiskFree Rate:</label><br />
+        <input type="text" placeholder="NR" id="NominalRiskFreeRate" oninput="$isValidFloat('#NominalRiskFreeRate')" /><br />
+        <label for=InflationRate>Inflation Rate:</label><br />
+        <input type="text" placeholder="IR" id="InflationRate" oninput="$isValidFloat('#InflationRate')" /><br /><br />
+        <input type="button" value="Calculate" onclick="$calculate()" />
+        <p>Risk Free Rate of Return = <output for="NominalRiskFreeRate InflationRate " id="result" /></p>
+    </form>
+</body>
+</html>
