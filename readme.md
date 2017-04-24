@@ -41,7 +41,6 @@ Capital budgeting
 - [x] Payback Period (Justin Thomas)
 - [x] Net Present Value Five Year Calculator  (Justin Thomas)
 - [x] Net present value of an investment  (Mike Singh)
-- [ ] Expected values and standard deviations  (Justin Thomas)
 
 Long-Term financing
 - [x] Dilution of stock value (Diluted EPS) (Abraham Hosch)
