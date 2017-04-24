@@ -52,5 +52,5 @@ PE ratio
 - [x] Residual claims to earnings (Mark Becker)
 - [ ] Value of one right to buy stock (Abraham Hosch)
 - [x] Price-earnings ratio (Mike Singh)
-- [ ] Discount rate (Tyler Oppegaard)
+- [x] Discount rate (Tyler Oppegaard)
 - [x] Stock Dilution (Tyler Oppegaard)
