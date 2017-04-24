@@ -159,6 +159,9 @@ exports.dilutionPerShareCalculator = function (req, res) {
     res.render('Calculators/DilutionPerShareCalculator', { title: 'ejs' });
 };
 
+exports.discountRateCalculator = function (req, res) {
+    res.render('Calculators/DiscountRateCalculator', { title: 'ejs' });
+
 exports.earningsBeforeDepreciationAndTaxesCalculator = function (req, res) {
     res.render('Calculators/EarningsBeforeDepreciationAndTaxesCalculator', { title: 'ejs' });
 };
